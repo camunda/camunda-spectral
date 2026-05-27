@@ -44,6 +44,8 @@
     "prepare": "husky install && yarn workspaces foreach run prepare",
     "prerelease": "patch-package",
     "release": "yarn prerelease && multi-semantic-release --deps.bump=satisfy",
+    "bundle": "node scripts/bundle.js",
+    "bundle:build": "yarn build && yarn bundle",
     "jest": "jest"
   },
   "workspaces": {
