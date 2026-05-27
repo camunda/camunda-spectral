@@ -97,6 +97,7 @@ export type RulesetDefinition = Readonly<
     description?: string;
     formats?: Formats | Format[];
     parserOptions?: Partial<ParserOptions>;
+    ignoreUnknownFormat?: boolean;
     overrides?: RulesetOverridesDefinition;
     aliases?: RulesetAliasesDefinition;
   } & Readonly<

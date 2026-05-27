@@ -321,6 +321,10 @@ export class Ruleset {
     return { ...DEFAULT_PARSER_OPTIONS, ...this.definition.parserOptions };
   }
 
+  public get ignoreUnknownFormat(): boolean {
+    return this.definition.ignoreUnknownFormat === true;
+  }
+
   public static isDefaultRulesetFile(uri: string): boolean {
     return DEFAULT_RULESET_FILE.test(uri);
   }

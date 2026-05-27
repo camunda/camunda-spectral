@@ -57,7 +57,7 @@ export class Spectral {
 
     if (document.formats === void 0) {
       const foundFormats = [...ruleset.formats].filter(format => format(inventory.resolved, document.source));
-      if (foundFormats.length === 0 && opts.ignoreUnknownFormat !== true) {
+      if (foundFormats.length === 0 && opts.ignoreUnknownFormat !== true && !ruleset.ignoreUnknownFormat) {
         document.formats = null;
         if (ruleset.formats.size > 0) {
           runner.addResult(this._generateUnrecognizedFormatError(document, Array.from(ruleset.formats)));
