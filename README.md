@@ -1,3 +1,15 @@
+# Camunda Spectral Fork
+
+> **This is a custom fork of [Stoplight Spectral](https://github.com/stoplightio/spectral)** maintained by Camunda. It is based on `@stoplight/spectral-cli@6.16.0` and includes the following patches:
+>
+> 1. **Unicode regex support** — Defaults `unicodeRegExp` to `true` in the OAS ruleset so that `\p{L}` and `\p{N}` patterns in schema validation work correctly. Based on upstream [PR #2809](https://github.com/stoplightio/spectral/pull/2809).
+> 2. **Null-safe `duplicated-entry-in-enum`** — Adds null guards to the JSONPath filter to prevent a nimma crash when `@.enum` is `null`.
+> 3. **Ruleset-level `ignoreUnknownFormat`** — Allows setting `ignoreUnknownFormat: true` directly in the ruleset YAML instead of requiring the CLI flag.
+>
+> Upstream tracking issue: [stoplightio/spectral#2419](https://github.com/stoplightio/spectral/issues/2419)
+
+---
+
 [![Demo of Spectral linting an OpenAPI document from the CLI](./docs/img/readme-header.svg)](https://stoplight.io/api-governance?utm_source=github&utm_medium=spectral&utm_campaign=readme)
 [![CircleCI](https://img.shields.io/circleci/build/github/stoplightio/spectral/develop)](https://circleci.com/gh/stoplightio/spectral) [![npm Downloads](https://img.shields.io/npm/dw/@stoplight/spectral-core?color=blue)](https://www.npmjs.com/package/@stoplight/spectral-core) [![Stoplight Forest](https://img.shields.io/ecologi/trees/stoplightinc)][stoplight_forest]
 
