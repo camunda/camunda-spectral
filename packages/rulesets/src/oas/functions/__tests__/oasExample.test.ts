@@ -1,7 +1,7 @@
-import { oas3, oas3_0 } from '@camunda/spectral-formats';
+import { oas3, oas3_0 } from '@camunda8/spectral-formats';
 import { DeepPartial } from '@stoplight/types';
 import oasExample, { Options as ExampleOptions } from '../oasExample';
-import { RulesetFunctionContext } from '@camunda/spectral-core/src';
+import { RulesetFunctionContext } from '@camunda8/spectral-core/src';
 
 const schemaOpts: ExampleOptions = {
   schemaField: '$',

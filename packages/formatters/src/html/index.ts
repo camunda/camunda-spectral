@@ -24,7 +24,7 @@
  */
 import { Dictionary } from '@stoplight/types';
 import { template } from 'lodash';
-import type { IRuleResult } from '@camunda/spectral-core';
+import type { IRuleResult } from '@camunda8/spectral-core';
 import { Formatter } from '../types';
 import { getHighestSeverity, getSeverityName, getSummary, getSummaryForSource, groupBySource } from '../utils';
 import templates from './templates';

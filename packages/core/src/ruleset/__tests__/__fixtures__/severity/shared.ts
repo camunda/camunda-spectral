@@ -1,5 +1,5 @@
-import { truthy, pattern } from '@camunda/spectral-functions';
-import type { RulesetDefinition } from '@camunda/spectral-core';
+import { truthy, pattern } from '@camunda8/spectral-functions';
+import type { RulesetDefinition } from '@camunda8/spectral-core';
 
 export { ruleset as default };
 

@@ -1,5 +1,5 @@
 import { DiagnosticSeverity } from '@stoplight/types';
-import { Spectral } from '@camunda/spectral-core';
+import { Spectral } from '@camunda8/spectral-core';
 import { prepareResults } from '../asyncApiDocumentSchema';
 
 import { ErrorObject } from 'ajv';

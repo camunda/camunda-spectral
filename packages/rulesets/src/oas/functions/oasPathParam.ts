@@ -1,7 +1,7 @@
 import type { JsonPath, Segment } from '@stoplight/types';
-import type { IFunctionResult } from '@camunda/spectral-core';
+import type { IFunctionResult } from '@camunda8/spectral-core';
 import { isObject } from './utils/isObject';
-import { createRulesetFunction } from '@camunda/spectral-core';
+import { createRulesetFunction } from '@camunda8/spectral-core';
 
 const pathRegex = /(\{;?\??[a-zA-Z0-9_-]+\*?\})/g;
 

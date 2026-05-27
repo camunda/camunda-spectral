@@ -1,5 +1,5 @@
 {
-  "name": "@camunda/spectral-ref-resolver",
+  "name": "@camunda8/spectral-ref-resolver",
   "version": "1.0.5",
   "homepage": "https://github.com/stoplightio/spectral",
   "bugs": "https://github.com/stoplightio/spectral/issues",
@@ -18,7 +18,7 @@
     "url": "https://github.com/stoplightio/spectral.git"
   },
   "dependencies": {
-    "@camunda/spectral-runtime": "^1.1.2",
+    "@camunda8/spectral-runtime": "^1.1.2",
     "@stoplight/json-ref-readers": "1.2.2",
     "@stoplight/json-ref-resolver": "~3.1.6",
     "dependency-graph": "0.11.0",

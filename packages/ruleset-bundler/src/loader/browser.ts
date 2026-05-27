@@ -1,4 +1,4 @@
-import { Ruleset } from '@camunda/spectral-core';
+import { Ruleset } from '@camunda8/spectral-core';
 
 import { bundle } from './common/bundle';
 import { runtime } from '../presets/runtime';

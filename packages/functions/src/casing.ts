@@ -1,5 +1,5 @@
 import { escapeRegExp } from 'lodash';
-import { createRulesetFunction } from '@camunda/spectral-core';
+import { createRulesetFunction } from '@camunda8/spectral-core';
 
 import { optionSchemas } from './optionSchemas';
 import { CasingType, CasingOptions as Options } from './types';

@@ -1,5 +1,5 @@
-import { oas2, oas3 } from '@camunda/spectral-formats';
-import { enumeration, falsy, pattern, schema, truthy } from '@camunda/spectral-functions';
+import { oas2, oas3 } from '@camunda8/spectral-formats';
+import { enumeration, falsy, pattern, schema, truthy } from '@camunda8/spectral-functions';
 export default {
   rules: {
     'api-home': {

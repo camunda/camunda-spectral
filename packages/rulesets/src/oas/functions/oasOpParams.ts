@@ -1,6 +1,6 @@
-import type { IFunctionResult } from '@camunda/spectral-core';
+import type { IFunctionResult } from '@camunda8/spectral-core';
 import { isObject } from './utils/isObject';
-import { createRulesetFunction } from '@camunda/spectral-core';
+import { createRulesetFunction } from '@camunda8/spectral-core';
 
 function computeFingerprint(param: Record<string, unknown>): string {
   return `${String(param.in)}-${String(param.name)}`;

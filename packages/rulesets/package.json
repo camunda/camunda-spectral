@@ -1,5 +1,5 @@
 {
-  "name": "@camunda/spectral-rulesets",
+  "name": "@camunda8/spectral-rulesets",
   "version": "1.22.2",
   "homepage": "https://github.com/stoplightio/spectral",
   "bugs": "https://github.com/stoplightio/spectral/issues",
@@ -19,10 +19,10 @@
   },
   "dependencies": {
     "@asyncapi/specs": "^6.8.0",
-    "@camunda/spectral-core": "^1.19.4",
-    "@camunda/spectral-formats": "^1.8.1",
-    "@camunda/spectral-functions": "^1.9.3",
-    "@camunda/spectral-runtime": "^1.1.2",
+    "@camunda8/spectral-core": "^1.19.4",
+    "@camunda8/spectral-formats": "^1.8.1",
+    "@camunda8/spectral-functions": "^1.9.3",
+    "@camunda8/spectral-runtime": "^1.1.2",
     "@stoplight/better-ajv-errors": "1.0.3",
     "@stoplight/json": "^3.17.0",
     "@stoplight/types": "^13.6.0",
@@ -35,8 +35,8 @@
     "tslib": "^2.8.1"
   },
   "devDependencies": {
-    "@camunda/spectral-parsers": "*",
-    "@camunda/spectral-ref-resolver": "^1.0.4",
+    "@camunda8/spectral-parsers": "*",
+    "@camunda8/spectral-ref-resolver": "^1.0.4",
     "@stoplight/path": "^1.3.2",
     "gzip-size": "^6.0.0",
     "immer": "^9.0.6",

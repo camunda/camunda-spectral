@@ -1,6 +1,6 @@
 import { createRequire } from 'module';
 import * as path from '@stoplight/path';
-import { Ruleset, RulesetDefinition } from '@camunda/spectral-core';
+import { Ruleset, RulesetDefinition } from '@camunda8/spectral-core';
 
 import { bundle } from './common/bundle';
 import { node } from '../presets/node';

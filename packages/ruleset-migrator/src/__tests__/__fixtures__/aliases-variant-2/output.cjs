@@ -1,4 +1,4 @@
-const { oas2, oas3_0, oas3_1 } = require('@camunda/spectral-formats');
+const { oas2, oas3_0, oas3_1 } = require('@camunda8/spectral-formats');
 module.exports = {
   aliases: {
     schema: {

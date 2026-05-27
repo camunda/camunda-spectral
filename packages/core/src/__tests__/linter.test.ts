@@ -1,8 +1,8 @@
-import { falsy, pattern, truthy } from '@camunda/spectral-functions';
+import { falsy, pattern, truthy } from '@camunda8/spectral-functions';
 import { DiagnosticSeverity } from '@stoplight/types';
 import { parse } from '@stoplight/yaml';
-import * as Parsers from '@camunda/spectral-parsers';
-import { Resolver } from '@camunda/spectral-ref-resolver';
+import * as Parsers from '@camunda8/spectral-parsers';
+import { Resolver } from '@camunda8/spectral-ref-resolver';
 
 import { IParsedResult } from '../document';
 import { Document, Spectral, Format, RulesetDefinition, Ruleset } from '..';

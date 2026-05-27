@@ -1,4 +1,4 @@
-const { undefined: undefined$0 } = require('@camunda/spectral-functions');
+const { undefined: undefined$0 } = require('@camunda8/spectral-functions');
 module.exports = {
   rules: {
     'oas3-unused-components': 'error',

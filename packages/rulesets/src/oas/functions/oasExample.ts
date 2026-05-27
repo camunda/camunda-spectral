@@ -1,8 +1,8 @@
 import { isObject } from './utils/isObject';
 import type { Dictionary, JsonPath, Optional } from '@stoplight/types';
 import oasSchema, { Options as SchemaOptions } from './oasSchema';
-import { createRulesetFunction, IFunctionResult } from '@camunda/spectral-core';
-import { oas2 } from '@camunda/spectral-formats';
+import { createRulesetFunction, IFunctionResult } from '@camunda8/spectral-core';
+import { oas2 } from '@camunda8/spectral-formats';
 import traverse from 'json-schema-traverse';
 
 export type Options = {

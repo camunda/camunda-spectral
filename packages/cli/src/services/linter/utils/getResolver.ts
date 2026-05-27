@@ -1,6 +1,6 @@
 import { isAbsolute, join } from '@stoplight/path';
 import { Optional } from '@stoplight/types';
-import { createHttpAndFileResolver, Resolver } from '@camunda/spectral-ref-resolver';
+import { createHttpAndFileResolver, Resolver } from '@camunda8/spectral-ref-resolver';
 import { isError } from 'lodash';
 import { CLIError } from '../../../errors';
 

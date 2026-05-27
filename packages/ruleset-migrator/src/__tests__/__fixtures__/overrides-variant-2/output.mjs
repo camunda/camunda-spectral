@@ -1,5 +1,5 @@
-import { truthy } from '@camunda/spectral-functions';
-import { oas } from '@camunda/spectral-rulesets';
+import { truthy } from '@camunda8/spectral-functions';
+import { oas } from '@camunda8/spectral-rulesets';
 export default {
   extends: [oas],
   aliases: {

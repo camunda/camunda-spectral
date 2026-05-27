@@ -1,6 +1,6 @@
 import * as fs from 'fs';
 
-import type { IFileReadOptions } from '@camunda/spectral-runtime';
+import type { IFileReadOptions } from '@camunda8/spectral-runtime';
 
 export async function readFileDescriptor(fd: number, opts: IFileReadOptions): Promise<string> {
   let result = '';

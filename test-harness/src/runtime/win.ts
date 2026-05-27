@@ -1,6 +1,6 @@
 import Shell from 'node-powershell';
 import { isError } from 'lodash';
-import type { SpawnFn } from '@camunda/spectral-test-harness';
+import type { SpawnFn } from '@camunda8/spectral-test-harness';
 
 import { normalizeLineEndings } from '../utils';
 

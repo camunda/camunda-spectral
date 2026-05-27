@@ -1,4 +1,4 @@
-import { RulesetDefinition } from '@camunda/spectral-core';
+import { RulesetDefinition } from '@camunda8/spectral-core';
 
 export default {
   extends: [],

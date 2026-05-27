@@ -1,4 +1,4 @@
-import type { IFunctionResult } from '@camunda/spectral-core';
+import type { IFunctionResult } from '@camunda8/spectral-core';
 import arazzoRuntimeExpressionValidation from './arazzoRuntimeExpressionValidation';
 import { ArazzoSpecification } from './types/arazzoTypes';
 

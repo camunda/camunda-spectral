@@ -9,7 +9,7 @@ import {
   aas2_6,
   aas3,
   aas3_0,
-} from '@camunda/spectral-formats';
+} from '@camunda8/spectral-formats';
 import {
   truthy,
   pattern,
@@ -17,7 +17,7 @@ import {
   schema,
   undefined,
   alphabetical,
-} from '@camunda/spectral-functions';
+} from '@camunda8/spectral-functions';
 
 import asyncApiChannelParameters from './functions/asyncApiChannelParameters';
 import asyncApi2ChannelServers from './functions/asyncApi2ChannelServers';

@@ -1,4 +1,4 @@
-import { truthy } from '@camunda/spectral-functions';
+import { truthy } from '@camunda8/spectral-functions';
 
 // Test case 2: Mixed severity modifiers followed by off
 // grandparent -> parent (off, re-enables with 'warn') -> child (off)

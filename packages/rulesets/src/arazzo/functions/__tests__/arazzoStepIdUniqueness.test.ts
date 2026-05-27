@@ -1,6 +1,6 @@
 import { DeepPartial } from '@stoplight/types';
 import arazzoStepIdUniqueness from '../arazzoStepIdUniqueness';
-import type { RulesetFunctionContext } from '@camunda/spectral-core';
+import type { RulesetFunctionContext } from '@camunda8/spectral-core';
 
 const runRule = (target: { steps: Array<{ stepId: string }> }) => {
   const context: DeepPartial<RulesetFunctionContext> = {

@@ -1,4 +1,4 @@
-import '@camunda/spectral-test-utils/matchers';
+import '@camunda8/spectral-test-utils/matchers';
 
 import { assertValidRuleset, RulesetValidationError } from '../index';
 import AggregateError = require('es-aggregate-error');

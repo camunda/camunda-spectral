@@ -1,8 +1,8 @@
 import type { JSONSchema6 as JSONSchema } from 'json-schema';
 import schema from '../schema';
-import { RulesetValidationError } from '@camunda/spectral-core';
+import { RulesetValidationError } from '@camunda8/spectral-core';
 import testFunction from './__helpers__/tester';
-import '@camunda/spectral-test-utils/matchers';
+import '@camunda8/spectral-test-utils/matchers';
 import AggregateError = require('es-aggregate-error');
 
 const runSchema = testFunction.bind(null, schema);

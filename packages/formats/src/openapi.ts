@@ -1,4 +1,4 @@
-import type { Format } from '@camunda/spectral-core';
+import type { Format } from '@camunda8/spectral-core';
 import { isPlainObject } from '@stoplight/json';
 
 type MaybeOAS2 = { swagger: unknown } & Record<string, unknown>;

@@ -28,8 +28,8 @@ import type { DiagnosticSeverity, IRange } from '@stoplight/types';
 import chalk from 'chalk';
 import stripAnsi = require('strip-ansi');
 import table from 'text-table';
-import { printPath, PrintStyle } from '@camunda/spectral-runtime';
-import type { IRuleResult } from '@camunda/spectral-core';
+import { printPath, PrintStyle } from '@camunda8/spectral-runtime';
+import type { IRuleResult } from '@camunda8/spectral-core';
 
 import type { Formatter } from './types';
 import { getColorForSeverity, getHighestSeverity, getSeverityName, getSummary, groupBySource } from './utils';

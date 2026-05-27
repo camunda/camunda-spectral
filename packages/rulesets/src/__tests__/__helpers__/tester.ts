@@ -1,6 +1,6 @@
-import { serveAssets } from '@camunda/spectral-test-utils';
-import { IRuleResult, Spectral, Document, RulesetDefinition } from '@camunda/spectral-core';
-import { httpAndFileResolver } from '@camunda/spectral-ref-resolver';
+import { serveAssets } from '@camunda8/spectral-test-utils';
+import { IRuleResult, Spectral, Document, RulesetDefinition } from '@camunda8/spectral-core';
+import { httpAndFileResolver } from '@camunda8/spectral-ref-resolver';
 import oasRuleset from '../../oas/index';
 import aasRuleset from '../../asyncapi/index';
 import arazzoRuleset from '../../arazzo/index';

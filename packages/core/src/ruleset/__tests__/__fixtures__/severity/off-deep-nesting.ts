@@ -1,4 +1,4 @@
-import { truthy } from '@camunda/spectral-functions';
+import { truthy } from '@camunda8/spectral-functions';
 
 // Test case 1: Deep nesting (great-grandparent chain)
 // great-grandparent -> grandparent (enables) -> parent (enables) -> child (off)

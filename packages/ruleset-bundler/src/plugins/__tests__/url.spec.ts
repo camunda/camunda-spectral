@@ -1,6 +1,6 @@
 import * as fs from 'fs';
-import { serveAssets, mockResponses } from '@camunda/spectral-test-utils';
-import { fetch } from '@camunda/spectral-runtime';
+import { serveAssets, mockResponses } from '@camunda8/spectral-test-utils';
+import { fetch } from '@camunda8/spectral-runtime';
 
 import { bundleRuleset } from '../../index';
 import { virtualFs } from '../virtualFs';

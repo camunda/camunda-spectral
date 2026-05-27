@@ -1,4 +1,4 @@
-const { pattern } = require('@camunda/spectral-functions');
+const { pattern } = require('@camunda8/spectral-functions');
 
 module.exports = {
   rules: {

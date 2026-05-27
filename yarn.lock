@@ -1478,18 +1478,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@camunda/spectral-cli@workspace:packages/cli":
+"@camunda8/spectral-cli@workspace:packages/cli":
   version: 0.0.0-use.local
-  resolution: "@camunda/spectral-cli@workspace:packages/cli"
+  resolution: "@camunda8/spectral-cli@workspace:packages/cli"
   dependencies:
-    "@camunda/spectral-core": ^1.19.5
-    "@camunda/spectral-formatters": ^1.4.1
-    "@camunda/spectral-parsers": ^1.0.4
-    "@camunda/spectral-ref-resolver": ^1.0.4
-    "@camunda/spectral-ruleset-bundler": ^1.6.0
-    "@camunda/spectral-ruleset-migrator": ^1.11.0
-    "@camunda/spectral-rulesets": ">=1"
-    "@camunda/spectral-runtime": ^1.1.2
+    "@camunda8/spectral-core": ^1.19.5
+    "@camunda8/spectral-formatters": ^1.4.1
+    "@camunda8/spectral-parsers": ^1.0.4
+    "@camunda8/spectral-ref-resolver": ^1.0.4
+    "@camunda8/spectral-ruleset-bundler": ^1.6.0
+    "@camunda8/spectral-ruleset-migrator": ^1.11.0
+    "@camunda8/spectral-rulesets": ">=1"
+    "@camunda8/spectral-runtime": ^1.1.2
     "@stoplight/json": ~3.21.0
     "@stoplight/path": 1.3.2
     "@stoplight/types": ^13.6.0
@@ -1513,15 +1513,15 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@camunda/spectral-core@*, @camunda/spectral-core@>=1, @camunda/spectral-core@^1.19.2, @camunda/spectral-core@^1.19.4, @camunda/spectral-core@^1.19.5, @camunda/spectral-core@workspace:packages/core":
+"@camunda8/spectral-core@*, @camunda8/spectral-core@>=1, @camunda8/spectral-core@^1.19.2, @camunda8/spectral-core@^1.19.4, @camunda8/spectral-core@^1.19.5, @camunda8/spectral-core@workspace:packages/core":
   version: 0.0.0-use.local
-  resolution: "@camunda/spectral-core@workspace:packages/core"
+  resolution: "@camunda8/spectral-core@workspace:packages/core"
   dependencies:
-    "@camunda/spectral-formats": ^1.8.1
-    "@camunda/spectral-functions": "*"
-    "@camunda/spectral-parsers": "*"
-    "@camunda/spectral-ref-resolver": ^1.0.4
-    "@camunda/spectral-runtime": ^1.1.2
+    "@camunda8/spectral-formats": ^1.8.1
+    "@camunda8/spectral-functions": "*"
+    "@camunda8/spectral-parsers": "*"
+    "@camunda8/spectral-ref-resolver": ^1.0.4
+    "@camunda8/spectral-runtime": ^1.1.2
     "@stoplight/better-ajv-errors": 1.0.3
     "@stoplight/json": ~3.21.0
     "@stoplight/path": 1.3.2
@@ -1548,23 +1548,23 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@camunda/spectral-formats@^1.8.1, @camunda/spectral-formats@workspace:packages/formats":
+"@camunda8/spectral-formats@^1.8.1, @camunda8/spectral-formats@workspace:packages/formats":
   version: 0.0.0-use.local
-  resolution: "@camunda/spectral-formats@workspace:packages/formats"
+  resolution: "@camunda8/spectral-formats@workspace:packages/formats"
   dependencies:
-    "@camunda/spectral-core": ^1.19.2
+    "@camunda8/spectral-core": ^1.19.2
     "@stoplight/json": ^3.17.0
     "@types/json-schema": ^7.0.7
     tslib: ^2.8.1
   languageName: unknown
   linkType: soft
 
-"@camunda/spectral-formatters@^1.4.1, @camunda/spectral-formatters@workspace:packages/formatters":
+"@camunda8/spectral-formatters@^1.4.1, @camunda8/spectral-formatters@workspace:packages/formatters":
   version: 0.0.0-use.local
-  resolution: "@camunda/spectral-formatters@workspace:packages/formatters"
+  resolution: "@camunda8/spectral-formatters@workspace:packages/formatters"
   dependencies:
-    "@camunda/spectral-core": ^1.19.4
-    "@camunda/spectral-runtime": ^1.1.2
+    "@camunda8/spectral-core": ^1.19.4
+    "@camunda8/spectral-runtime": ^1.1.2
     "@stoplight/path": ^1.3.2
     "@stoplight/types": ^13.15.0
     "@types/markdown-escape": ^1.1.3
@@ -1584,14 +1584,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@camunda/spectral-functions@*, @camunda/spectral-functions@>=1, @camunda/spectral-functions@^1.9.1, @camunda/spectral-functions@^1.9.3, @camunda/spectral-functions@workspace:packages/functions":
+"@camunda8/spectral-functions@*, @camunda8/spectral-functions@>=1, @camunda8/spectral-functions@^1.9.1, @camunda8/spectral-functions@^1.9.3, @camunda8/spectral-functions@workspace:packages/functions":
   version: 0.0.0-use.local
-  resolution: "@camunda/spectral-functions@workspace:packages/functions"
+  resolution: "@camunda8/spectral-functions@workspace:packages/functions"
   dependencies:
-    "@camunda/spectral-core": ^1.19.4
-    "@camunda/spectral-formats": ^1.8.1
-    "@camunda/spectral-parsers": "*"
-    "@camunda/spectral-runtime": ^1.1.2
+    "@camunda8/spectral-core": ^1.19.4
+    "@camunda8/spectral-formats": ^1.8.1
+    "@camunda8/spectral-parsers": "*"
+    "@camunda8/spectral-runtime": ^1.1.2
     "@stoplight/better-ajv-errors": 1.0.3
     "@stoplight/json": ^3.17.1
     ajv: ^8.18.0
@@ -1603,9 +1603,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@camunda/spectral-parsers@*, @camunda/spectral-parsers@>=1, @camunda/spectral-parsers@^1.0.4, @camunda/spectral-parsers@workspace:packages/parsers":
+"@camunda8/spectral-parsers@*, @camunda8/spectral-parsers@>=1, @camunda8/spectral-parsers@^1.0.4, @camunda8/spectral-parsers@workspace:packages/parsers":
   version: 0.0.0-use.local
-  resolution: "@camunda/spectral-parsers@workspace:packages/parsers"
+  resolution: "@camunda8/spectral-parsers@workspace:packages/parsers"
   dependencies:
     "@stoplight/json": ~3.21.0
     "@stoplight/types": ^14.1.1
@@ -1614,11 +1614,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@camunda/spectral-ref-resolver@^1.0.4, @camunda/spectral-ref-resolver@workspace:packages/ref-resolver":
+"@camunda8/spectral-ref-resolver@^1.0.4, @camunda8/spectral-ref-resolver@workspace:packages/ref-resolver":
   version: 0.0.0-use.local
-  resolution: "@camunda/spectral-ref-resolver@workspace:packages/ref-resolver"
+  resolution: "@camunda8/spectral-ref-resolver@workspace:packages/ref-resolver"
   dependencies:
-    "@camunda/spectral-runtime": ^1.1.2
+    "@camunda8/spectral-runtime": ^1.1.2
     "@stoplight/json-ref-readers": 1.2.2
     "@stoplight/json-ref-resolver": ~3.1.6
     dependency-graph: 0.11.0
@@ -1626,18 +1626,18 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@camunda/spectral-ruleset-bundler@^1.6.0, @camunda/spectral-ruleset-bundler@workspace:packages/ruleset-bundler":
+"@camunda8/spectral-ruleset-bundler@^1.6.0, @camunda8/spectral-ruleset-bundler@workspace:packages/ruleset-bundler":
   version: 0.0.0-use.local
-  resolution: "@camunda/spectral-ruleset-bundler@workspace:packages/ruleset-bundler"
+  resolution: "@camunda8/spectral-ruleset-bundler@workspace:packages/ruleset-bundler"
   dependencies:
-    "@camunda/spectral-core": ">=1"
-    "@camunda/spectral-formats": ^1.8.1
-    "@camunda/spectral-functions": ">=1"
-    "@camunda/spectral-parsers": ">=1"
-    "@camunda/spectral-ref-resolver": ^1.0.4
-    "@camunda/spectral-ruleset-migrator": ^1.9.6
-    "@camunda/spectral-rulesets": ">=1"
-    "@camunda/spectral-runtime": ^1.1.2
+    "@camunda8/spectral-core": ">=1"
+    "@camunda8/spectral-formats": ^1.8.1
+    "@camunda8/spectral-functions": ">=1"
+    "@camunda8/spectral-parsers": ">=1"
+    "@camunda8/spectral-ref-resolver": ^1.0.4
+    "@camunda8/spectral-ruleset-migrator": ^1.9.6
+    "@camunda8/spectral-rulesets": ">=1"
+    "@camunda8/spectral-runtime": ^1.1.2
     "@rollup/plugin-commonjs": ~22.0.2
     "@stoplight/path": 1.3.2
     "@stoplight/types": ^13.6.0
@@ -1653,14 +1653,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@camunda/spectral-ruleset-migrator@^1.11.0, @camunda/spectral-ruleset-migrator@^1.9.6, @camunda/spectral-ruleset-migrator@workspace:packages/ruleset-migrator":
+"@camunda8/spectral-ruleset-migrator@^1.11.0, @camunda8/spectral-ruleset-migrator@^1.9.6, @camunda8/spectral-ruleset-migrator@workspace:packages/ruleset-migrator":
   version: 0.0.0-use.local
-  resolution: "@camunda/spectral-ruleset-migrator@workspace:packages/ruleset-migrator"
+  resolution: "@camunda8/spectral-ruleset-migrator@workspace:packages/ruleset-migrator"
   dependencies:
-    "@camunda/spectral-core": "*"
-    "@camunda/spectral-functions": ^1.9.1
-    "@camunda/spectral-rulesets": "*"
-    "@camunda/spectral-runtime": ^1.1.2
+    "@camunda8/spectral-core": "*"
+    "@camunda8/spectral-functions": ^1.9.1
+    "@camunda8/spectral-rulesets": "*"
+    "@camunda8/spectral-runtime": ^1.1.2
     "@stoplight/json": ~3.21.0
     "@stoplight/ordered-object-literal": ~1.0.4
     "@stoplight/path": 1.3.2
@@ -1680,17 +1680,17 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@camunda/spectral-rulesets@*, @camunda/spectral-rulesets@>=1, @camunda/spectral-rulesets@workspace:packages/rulesets":
+"@camunda8/spectral-rulesets@*, @camunda8/spectral-rulesets@>=1, @camunda8/spectral-rulesets@workspace:packages/rulesets":
   version: 0.0.0-use.local
-  resolution: "@camunda/spectral-rulesets@workspace:packages/rulesets"
+  resolution: "@camunda8/spectral-rulesets@workspace:packages/rulesets"
   dependencies:
     "@asyncapi/specs": ^6.8.0
-    "@camunda/spectral-core": ^1.19.4
-    "@camunda/spectral-formats": ^1.8.1
-    "@camunda/spectral-functions": ^1.9.3
-    "@camunda/spectral-parsers": "*"
-    "@camunda/spectral-ref-resolver": ^1.0.4
-    "@camunda/spectral-runtime": ^1.1.2
+    "@camunda8/spectral-core": ^1.19.4
+    "@camunda8/spectral-formats": ^1.8.1
+    "@camunda8/spectral-functions": ^1.9.3
+    "@camunda8/spectral-parsers": "*"
+    "@camunda8/spectral-ref-resolver": ^1.0.4
+    "@camunda8/spectral-runtime": ^1.1.2
     "@stoplight/better-ajv-errors": 1.0.3
     "@stoplight/json": ^3.17.0
     "@stoplight/path": ^1.3.2
@@ -1708,9 +1708,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@camunda/spectral-runtime@^1.1.2, @camunda/spectral-runtime@workspace:packages/runtime":
+"@camunda8/spectral-runtime@^1.1.2, @camunda8/spectral-runtime@workspace:packages/runtime":
   version: 0.0.0-use.local
-  resolution: "@camunda/spectral-runtime@workspace:packages/runtime"
+  resolution: "@camunda8/spectral-runtime@workspace:packages/runtime"
   dependencies:
     "@stoplight/json": ^3.20.1
     "@stoplight/path": ^1.3.2

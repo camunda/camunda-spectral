@@ -1,5 +1,5 @@
 import * as process from 'process';
-import { IRuleResult, Ruleset } from '@camunda/spectral-core';
+import { IRuleResult, Ruleset } from '@camunda8/spectral-core';
 import { promises as fs } from 'fs';
 import {
   html,
@@ -13,8 +13,8 @@ import {
   sarif,
   codeClimate,
   markdown,
-} from '@camunda/spectral-formatters';
-import type { Formatter, FormatterOptions } from '@camunda/spectral-formatters';
+} from '@camunda8/spectral-formatters';
+import type { Formatter, FormatterOptions } from '@camunda8/spectral-formatters';
 import type { OutputFormat } from './config';
 import { VERSION } from '../version';
 

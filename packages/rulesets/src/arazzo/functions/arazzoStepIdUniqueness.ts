@@ -1,4 +1,4 @@
-import { createRulesetFunction, IFunctionResult } from '@camunda/spectral-core';
+import { createRulesetFunction, IFunctionResult } from '@camunda8/spectral-core';
 import type { JsonPath } from '@stoplight/types';
 
 export default createRulesetFunction<{ steps: Array<{ stepId?: string }> }, null>(

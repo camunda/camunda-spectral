@@ -1,4 +1,4 @@
-import { oas } from "@camunda/spectral-rulesets";
+import { oas } from "@camunda8/spectral-rulesets";
 export default {
   extends: oas,
   overrides: [

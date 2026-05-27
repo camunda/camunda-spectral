@@ -1,5 +1,5 @@
-import type { IFunctionResult } from '@camunda/spectral-core';
-import { createRulesetFunction } from '@camunda/spectral-core';
+import type { IFunctionResult } from '@camunda8/spectral-core';
+import { createRulesetFunction } from '@camunda8/spectral-core';
 import { getAllOperations } from './utils/getAllOperations';
 import { isObject } from './utils/isObject';
 

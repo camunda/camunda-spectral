@@ -1,9 +1,9 @@
 import type { ErrorObject } from 'ajv';
 import betterAjvErrors from '@stoplight/better-ajv-errors';
-import { detectDialect } from '@camunda/spectral-formats';
+import { detectDialect } from '@camunda8/spectral-formats';
 import { createAjvInstances } from './ajv';
 import MissingRefError from 'ajv/dist/compile/ref_error';
-import { createRulesetFunction, IFunctionResult, JSONSchema, RulesetFunctionContext } from '@camunda/spectral-core';
+import { createRulesetFunction, IFunctionResult, JSONSchema, RulesetFunctionContext } from '@camunda8/spectral-core';
 import { isError, pick } from 'lodash';
 
 import { optionSchemas } from '../optionSchemas';

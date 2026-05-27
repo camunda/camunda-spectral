@@ -1,4 +1,4 @@
-import { decodeSegmentFragment, getClosestJsonPath, printPath, PrintStyle } from '@camunda/spectral-runtime';
+import { decodeSegmentFragment, getClosestJsonPath, printPath, PrintStyle } from '@camunda8/spectral-runtime';
 import { get, isError } from 'lodash';
 import { ErrorWithCause } from 'pony-cause';
 

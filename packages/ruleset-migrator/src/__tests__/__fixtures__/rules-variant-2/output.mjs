@@ -1,4 +1,4 @@
-import { undefined as undefined$0 } from "@camunda/spectral-functions";
+import { undefined as undefined$0 } from "@camunda8/spectral-functions";
 export default {
   rules: {
     'oas3-unused-components': 'error',

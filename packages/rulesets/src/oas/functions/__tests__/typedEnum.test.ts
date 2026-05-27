@@ -1,6 +1,6 @@
 import typedEnum from '../typedEnum';
-import { Document } from '@camunda/spectral-core';
-import * as Parsers from '@camunda/spectral-parsers';
+import { Document } from '@camunda8/spectral-core';
+import * as Parsers from '@camunda8/spectral-parsers';
 
 function runTypedEnum(targetVal: any) {
   const doc = new Document(JSON.stringify(targetVal), Parsers.Json);

@@ -1,5 +1,5 @@
-const { oas2, oas3 } = require('@camunda/spectral-formats');
-const { oas } = require('@camunda/spectral-rulesets');
+const { oas2, oas3 } = require('@camunda8/spectral-formats');
+const { oas } = require('@camunda8/spectral-rulesets');
 module.exports = {
   overrides: [
     {

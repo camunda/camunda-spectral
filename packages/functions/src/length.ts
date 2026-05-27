@@ -1,5 +1,5 @@
-import { createRulesetFunction, IFunctionResult } from '@camunda/spectral-core';
-import { printValue } from '@camunda/spectral-runtime';
+import { createRulesetFunction, IFunctionResult } from '@camunda8/spectral-core';
+import { printValue } from '@camunda8/spectral-runtime';
 import { isPlainObject } from '@stoplight/json';
 
 import { optionSchemas } from './optionSchemas';

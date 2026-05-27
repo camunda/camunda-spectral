@@ -19,7 +19,7 @@ async function processExtend(
   name: string,
 ): Promise<namedTypes.ObjectExpression | namedTypes.Identifier> {
   if (name in REPLACEMENTS) {
-    return ctx.tree.addImport(REPLACEMENTS[name], '@camunda/spectral-rulesets');
+    return ctx.tree.addImport(REPLACEMENTS[name], '@camunda8/spectral-rulesets');
   }
 
   const filepath = ctx.tree.resolveModule(name, ctx, 'ruleset');

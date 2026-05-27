@@ -63,8 +63,8 @@ describe('migrator', () => {
             },
           },
         }),
-      ).toEqual(`import {oas2} from "@camunda/spectral-formats";
-import {truthy} from "@camunda/spectral-functions";
+      ).toEqual(`import {oas2} from "@camunda8/spectral-formats";
+import {truthy} from "@camunda8/spectral-functions";
 import test from "${cwd}/node_modules/my-npm-ruleset/functions/test.js";
 export default {
   "extends": [{

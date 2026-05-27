@@ -1,5 +1,5 @@
-import type { RulesetFunctionContext } from '@camunda/spectral-core';
-import { oas2, oas3, oas3_0, oas3_1 } from '@camunda/spectral-formats';
+import type { RulesetFunctionContext } from '@camunda8/spectral-core';
+import { oas2, oas3, oas3_0, oas3_1 } from '@camunda8/spectral-formats';
 import type { DeepPartial } from '@stoplight/types';
 
 import oasSchema from '../../functions/oasSchema';

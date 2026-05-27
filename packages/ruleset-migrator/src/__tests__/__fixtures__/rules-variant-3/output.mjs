@@ -1,4 +1,4 @@
-import { length as length$0, truthy } from '@camunda/spectral-functions';
+import { length as length$0, truthy } from '@camunda8/spectral-functions';
 export default {
   rules: {
     rule: {

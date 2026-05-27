@@ -1,4 +1,4 @@
-import { truthy } from '@camunda/spectral-functions';
+import { truthy } from '@camunda8/spectral-functions';
 
 // Test case 3: Object rule modification followed by off
 // grandparent -> parent (modifies rule with object) -> child (off)

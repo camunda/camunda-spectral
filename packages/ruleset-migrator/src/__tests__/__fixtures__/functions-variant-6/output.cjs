@@ -1,4 +1,4 @@
-const { truthy } = require('@camunda/spectral-functions');
+const { truthy } = require('@camunda8/spectral-functions');
 module.exports = {
   rules: {
     rule: {

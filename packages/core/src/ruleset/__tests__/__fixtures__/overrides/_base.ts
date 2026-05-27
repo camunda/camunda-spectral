@@ -1,4 +1,4 @@
-import { pattern } from '@camunda/spectral-functions';
+import { pattern } from '@camunda8/spectral-functions';
 import { DiagnosticSeverity } from '@stoplight/types';
 
 export default {

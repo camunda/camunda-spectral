@@ -25,7 +25,7 @@
 
 import { extname } from '@stoplight/path';
 import { escapeRegExp } from 'lodash';
-import { printPath, PrintStyle } from '@camunda/spectral-runtime';
+import { printPath, PrintStyle } from '@camunda8/spectral-runtime';
 import { Formatter } from './types';
 import { groupBySource, xmlEscape } from './utils';
 

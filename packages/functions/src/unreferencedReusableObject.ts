@@ -1,5 +1,5 @@
-import { createRulesetFunction } from '@camunda/spectral-core';
-import { safePointerToPath } from '@camunda/spectral-runtime';
+import { createRulesetFunction } from '@camunda8/spectral-core';
+import { safePointerToPath } from '@camunda8/spectral-runtime';
 import { decodePointer } from '@stoplight/json';
 
 import { optionSchemas } from './optionSchemas';

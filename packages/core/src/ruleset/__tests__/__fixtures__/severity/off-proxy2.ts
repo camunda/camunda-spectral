@@ -1,5 +1,5 @@
 import { DiagnosticSeverity } from '@stoplight/types';
-import { truthy } from '@camunda/spectral-functions';
+import { truthy } from '@camunda8/spectral-functions';
 
 const ruleset1 = {
   rules: {

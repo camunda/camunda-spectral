@@ -1,5 +1,5 @@
 import { DiagnosticSeverity } from '@stoplight/types';
-import type { IRuleResult } from '@camunda/spectral-core';
+import type { IRuleResult } from '@camunda8/spectral-core';
 import { json } from '../json';
 
 const results: IRuleResult[] = [

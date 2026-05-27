@@ -1,4 +1,4 @@
-import { ISpectralDiagnostic, Ruleset } from '@camunda/spectral-core';
+import { ISpectralDiagnostic, Ruleset } from '@camunda8/spectral-core';
 import type { DiagnosticSeverity } from '@stoplight/types';
 
 export type FormatterOptions = {

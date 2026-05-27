@@ -1,6 +1,6 @@
-import { createRulesetFunction } from '@camunda/spectral-core';
+import { createRulesetFunction } from '@camunda8/spectral-core';
 
-import type { IFunctionResult } from '@camunda/spectral-core';
+import type { IFunctionResult } from '@camunda8/spectral-core';
 
 type Tags = Array<{ name: string }>;
 

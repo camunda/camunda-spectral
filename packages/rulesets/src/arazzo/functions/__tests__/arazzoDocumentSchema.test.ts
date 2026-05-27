@@ -1,6 +1,6 @@
-import type { RulesetFunctionContext } from '@camunda/spectral-core';
+import type { RulesetFunctionContext } from '@camunda8/spectral-core';
 import arazzoDocumentSchema from '../arazzoDocumentSchema';
-import { arazzo1_0 } from '@camunda/spectral-formats';
+import { arazzo1_0 } from '@camunda8/spectral-formats';
 
 function runSchema(target: unknown, context?: Partial<RulesetFunctionContext>) {
   return arazzoDocumentSchema(target, null, {

@@ -1,6 +1,6 @@
-import { RulesetDefinition } from '@camunda/spectral-core';
+import { RulesetDefinition } from '@camunda8/spectral-core';
 import shared from './shared';
-import { truthy } from '@camunda/spectral-functions/src';
+import { truthy } from '@camunda8/spectral-functions/src';
 
 export default {
   extends: [[shared, 'off']],

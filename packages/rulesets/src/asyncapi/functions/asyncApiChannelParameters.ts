@@ -1,6 +1,6 @@
-import { createRulesetFunction } from '@camunda/spectral-core';
+import { createRulesetFunction } from '@camunda8/spectral-core';
 
-import type { IFunctionResult } from '@camunda/spectral-core';
+import type { IFunctionResult } from '@camunda8/spectral-core';
 import { parseUrlVariables } from '../../shared/functions/serverVariables/utils/parseUrlVariables';
 import { getMissingProps } from '../../shared/utils/getMissingProps';
 import { getRedundantProps } from '../../shared/utils/getRedundantProps';

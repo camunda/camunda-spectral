@@ -1,4 +1,4 @@
-const { oas } = require('@camunda/spectral-rulesets');
+const { oas } = require('@camunda8/spectral-rulesets');
 module.exports = {
   extends: oas,
   overrides: [

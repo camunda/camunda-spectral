@@ -1,6 +1,6 @@
 import arazzoStepOutputNamesValidation from '../arazzoStepOutputNamesValidation';
 import { DeepPartial } from '@stoplight/types';
-import type { RulesetFunctionContext } from '@camunda/spectral-core';
+import type { RulesetFunctionContext } from '@camunda8/spectral-core';
 
 const runRule = (
   target: {

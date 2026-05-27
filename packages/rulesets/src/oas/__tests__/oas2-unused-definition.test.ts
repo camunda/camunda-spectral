@@ -1,7 +1,7 @@
 import { DiagnosticSeverity } from '@stoplight/types';
 import * as path from '@stoplight/path';
-import { Document } from '@camunda/spectral-core';
-import * as Parsers from '@camunda/spectral-parsers';
+import { Document } from '@camunda8/spectral-core';
+import * as Parsers from '@camunda8/spectral-parsers';
 import testRule from '../../__tests__/__helpers__/tester';
 
 const remoteLocalDocument = new Document<any, any>(

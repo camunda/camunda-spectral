@@ -1,7 +1,7 @@
 import { DiagnosticSeverity } from '@stoplight/types';
-import { truthy } from '@camunda/spectral-functions';
-import * as Parsers from '@camunda/spectral-parsers';
-import { Resolver } from '@camunda/spectral-ref-resolver';
+import { truthy } from '@camunda8/spectral-functions';
+import * as Parsers from '@camunda8/spectral-parsers';
+import { Resolver } from '@camunda8/spectral-ref-resolver';
 import { Document } from '../document';
 import { Spectral } from '../spectral';
 import { Ruleset } from '../ruleset';

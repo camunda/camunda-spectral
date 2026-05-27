@@ -1,9 +1,9 @@
-import { createRulesetFunction } from '@camunda/spectral-core';
+import { createRulesetFunction } from '@camunda8/spectral-core';
 import { isPlainObject } from '@stoplight/json';
 
 import { getAllOperations } from './utils/getAllOperations';
 
-import type { IFunctionResult } from '@camunda/spectral-core';
+import type { IFunctionResult } from '@camunda8/spectral-core';
 import type { JsonPath } from '@stoplight/types';
 
 function retrieveOperationId(operation: {

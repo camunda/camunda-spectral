@@ -1,5 +1,5 @@
-const { asyncapi2, asyncapi3, jsonSchemaLoose, oas2, oas3, oas3_0, oas3_1 } = require('@camunda/spectral-formats');
-const { truthy } = require('@camunda/spectral-functions');
+const { asyncapi2, asyncapi3, jsonSchemaLoose, oas2, oas3, oas3_0, oas3_1 } = require('@camunda8/spectral-formats');
+const { truthy } = require('@camunda8/spectral-functions');
 module.exports = {
   formats: [oas2, oas3_1, oas3_0, jsonSchemaLoose],
   rules: {

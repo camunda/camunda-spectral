@@ -1,10 +1,10 @@
-import { createRulesetFunction } from '@camunda/spectral-core';
-import { schema as schemaFn } from '@camunda/spectral-functions';
+import { createRulesetFunction } from '@camunda8/spectral-core';
+import { schema as schemaFn } from '@camunda8/spectral-functions';
 
 import { mergeTraits } from './utils/mergeTraits';
 
 import type { JsonPath } from '@stoplight/types';
-import type { IFunctionResult, RulesetFunctionContext } from '@camunda/spectral-core';
+import type { IFunctionResult, RulesetFunctionContext } from '@camunda8/spectral-core';
 import type { JSONSchema7 } from 'json-schema';
 
 interface MessageExample {

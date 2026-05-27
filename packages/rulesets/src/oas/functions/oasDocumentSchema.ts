@@ -1,6 +1,6 @@
-import { createRulesetFunction } from '@camunda/spectral-core';
-import type { IFunctionResult } from '@camunda/spectral-core';
-import { oas2, oas3_1 } from '@camunda/spectral-formats';
+import { createRulesetFunction } from '@camunda8/spectral-core';
+import type { IFunctionResult } from '@camunda8/spectral-core';
+import { oas2, oas3_1 } from '@camunda8/spectral-formats';
 import { isPlainObject, resolveInlineRef } from '@stoplight/json';
 import type { ErrorObject } from 'ajv';
 import leven from 'leven';

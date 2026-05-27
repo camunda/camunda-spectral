@@ -1,11 +1,11 @@
-import '@camunda/spectral-test-utils/matchers';
+import '@camunda8/spectral-test-utils/matchers';
 
 import { join, resolve } from '@stoplight/path';
 import nock from 'nock';
 import * as yargs from 'yargs';
 import { DiagnosticSeverity } from '@stoplight/types';
-import { RulesetValidationError } from '@camunda/spectral-core';
-import '@camunda/spectral-test-utils/matchers';
+import { RulesetValidationError } from '@camunda8/spectral-core';
+import '@camunda8/spectral-test-utils/matchers';
 import AggregateError = require('es-aggregate-error');
 import * as process from 'process';
 

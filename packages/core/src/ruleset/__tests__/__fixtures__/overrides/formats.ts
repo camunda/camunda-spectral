@@ -1,6 +1,6 @@
-import { jsonSchemaDraft4, jsonSchemaDraft7 } from '@camunda/spectral-formats';
-import { schema } from '@camunda/spectral-functions';
-import { RulesetDefinition } from '@camunda/spectral-core';
+import { jsonSchemaDraft4, jsonSchemaDraft7 } from '@camunda8/spectral-formats';
+import { schema } from '@camunda8/spectral-functions';
+import { RulesetDefinition } from '@camunda8/spectral-core';
 
 import _base from './_base';
 

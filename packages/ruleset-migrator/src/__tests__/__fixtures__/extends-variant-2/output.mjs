@@ -1,4 +1,4 @@
-import { asyncapi, oas } from '@camunda/spectral-rulesets';
+import { asyncapi, oas } from '@camunda8/spectral-rulesets';
 export default {
   extends: [oas, asyncapi],
 };

@@ -1,4 +1,4 @@
-import { oas2, oas3_0, oas3_1 } from '@camunda/spectral-formats';
+import { oas2, oas3_0, oas3_1 } from '@camunda8/spectral-formats';
 export default {
   aliases: {
     schema: {

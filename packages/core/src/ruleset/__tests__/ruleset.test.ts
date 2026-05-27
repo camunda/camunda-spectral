@@ -1,7 +1,7 @@
-import '@camunda/spectral-test-utils/matchers';
+import '@camunda8/spectral-test-utils/matchers';
 
-import { oas2 } from '@camunda/spectral-formats';
-import { pattern, truthy } from '@camunda/spectral-functions';
+import { oas2 } from '@camunda8/spectral-formats';
+import { pattern, truthy } from '@camunda8/spectral-functions';
 import * as path from '@stoplight/path';
 import { DiagnosticSeverity } from '@stoplight/types';
 import AggregateError = require('es-aggregate-error');

@@ -1,5 +1,5 @@
 import ruleset from './indirect.1';
-import {falsy} from "@camunda/spectral-functions";
+import {falsy} from "@camunda8/spectral-functions";
 
 export default {
   get extends() {

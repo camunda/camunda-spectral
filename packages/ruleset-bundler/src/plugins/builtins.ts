@@ -1,14 +1,14 @@
-import * as core from '@camunda/spectral-core';
-import * as formats from '@camunda/spectral-formats';
-import * as functions from '@camunda/spectral-functions';
-import * as parsers from '@camunda/spectral-parsers';
-import * as refResolver from '@camunda/spectral-ref-resolver';
-import * as rulesets from '@camunda/spectral-rulesets';
-import * as runtime from '@camunda/spectral-runtime';
+import * as core from '@camunda8/spectral-core';
+import * as formats from '@camunda8/spectral-formats';
+import * as functions from '@camunda8/spectral-functions';
+import * as parsers from '@camunda8/spectral-parsers';
+import * as refResolver from '@camunda8/spectral-ref-resolver';
+import * as rulesets from '@camunda8/spectral-rulesets';
+import * as runtime from '@camunda8/spectral-runtime';
 import type { Plugin, InputOptions } from 'rollup';
 
 type Module = 'core' | 'formats' | 'functions' | 'parsers' | 'ref-resolver' | 'rulesets' | 'runtime';
-type GlobalModules = Record<`@camunda/spectral-${Module}`, string>;
+type GlobalModules = Record<`@camunda8/spectral-${Module}`, string>;
 type Overrides = Record<keyof GlobalModules, Record<string, unknown>>;
 
 const NAME = '@stoplight-spectral/builtins';
@@ -38,13 +38,13 @@ export const builtins = (overrides: Partial<Overrides> = {}): Plugin => {
   const instanceId = Math.round(Math.random() * 1_000_000);
 
   const modules = Object.fromEntries([
-    registerModule(instanceId, '@camunda/spectral-core', core, overrides),
-    registerModule(instanceId, '@camunda/spectral-formats', formats, overrides),
-    registerModule(instanceId, '@camunda/spectral-functions', functions, overrides),
-    registerModule(instanceId, '@camunda/spectral-parsers', parsers, overrides),
-    registerModule(instanceId, '@camunda/spectral-ref-resolver', refResolver, overrides),
-    registerModule(instanceId, '@camunda/spectral-rulesets', rulesets, overrides),
-    registerModule(instanceId, '@camunda/spectral-runtime', runtime, overrides),
+    registerModule(instanceId, '@camunda8/spectral-core', core, overrides),
+    registerModule(instanceId, '@camunda8/spectral-formats', formats, overrides),
+    registerModule(instanceId, '@camunda8/spectral-functions', functions, overrides),
+    registerModule(instanceId, '@camunda8/spectral-parsers', parsers, overrides),
+    registerModule(instanceId, '@camunda8/spectral-ref-resolver', refResolver, overrides),
+    registerModule(instanceId, '@camunda8/spectral-rulesets', rulesets, overrides),
+    registerModule(instanceId, '@camunda8/spectral-runtime', runtime, overrides),
   ]) as GlobalModules;
 
   return {

@@ -1,4 +1,4 @@
-import { createRulesetFunction, IFunctionResult } from '@camunda/spectral-core';
+import { createRulesetFunction, IFunctionResult } from '@camunda8/spectral-core';
 import { optionSchemas } from './optionSchemas';
 
 export type Options = {

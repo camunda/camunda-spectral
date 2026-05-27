@@ -1,5 +1,5 @@
 import { Dictionary } from '@stoplight/types';
-import { HumanReadableDiagnosticSeverity } from '@camunda/spectral-core';
+import { HumanReadableDiagnosticSeverity } from '@camunda8/spectral-core';
 
 export type FailSeverity = HumanReadableDiagnosticSeverity;
 

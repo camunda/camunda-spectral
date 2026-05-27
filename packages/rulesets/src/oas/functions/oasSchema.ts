@@ -1,8 +1,8 @@
 import type { SchemaObject, ErrorObject } from 'ajv';
 import traverse from 'json-schema-traverse';
-import { schema as schemaFn, SchemaOptions } from '@camunda/spectral-functions';
-import { createRulesetFunction } from '@camunda/spectral-core';
-import { oas2, oas3_1, extractDraftVersion, oas3_0 } from '@camunda/spectral-formats';
+import { schema as schemaFn, SchemaOptions } from '@camunda8/spectral-functions';
+import { createRulesetFunction } from '@camunda8/spectral-core';
+import { oas2, oas3_1, extractDraftVersion, oas3_0 } from '@camunda8/spectral-formats';
 import { isPlainObject, pointerToPath } from '@stoplight/json';
 
 export type Options = {

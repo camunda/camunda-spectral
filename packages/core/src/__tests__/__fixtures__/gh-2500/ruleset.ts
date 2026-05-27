@@ -1,6 +1,6 @@
 import { Ruleset } from '../../../ruleset';
 import { DiagnosticSeverity } from '@stoplight/types';
-import { defined } from '@camunda/spectral-functions';
+import { defined } from '@camunda8/spectral-functions';
 
 export default new Ruleset({
   rules: {

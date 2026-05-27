@@ -1,4 +1,4 @@
-import { truthy } from '@camunda/spectral-functions';
+import { truthy } from '@camunda8/spectral-functions';
 
 // Test case 4: Non-recommended rule enabled then off
 // grandparent (recommended:false) -> parent (enables with true) -> child (off)

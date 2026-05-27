@@ -1,4 +1,4 @@
-import { aas2_0 } from '@camunda/spectral-formats';
+import { aas2_0 } from '@camunda8/spectral-formats';
 import asyncApiPayloadValidation from '../asyncApiPayloadValidation';
 
 function runPayloadValidation(targetVal: any) {

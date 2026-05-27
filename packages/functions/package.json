@@ -1,5 +1,5 @@
 {
-  "name": "@camunda/spectral-functions",
+  "name": "@camunda8/spectral-functions",
   "version": "1.10.2",
   "sideEffects": false,
   "homepage": "https://github.com/stoplightio/spectral",
@@ -19,9 +19,9 @@
     "node": "^16.20 || ^18.18 || >= 20.17"
   },
   "dependencies": {
-    "@camunda/spectral-core": "^1.19.4",
-    "@camunda/spectral-formats": "^1.8.1",
-    "@camunda/spectral-runtime": "^1.1.2",
+    "@camunda8/spectral-core": "^1.19.4",
+    "@camunda8/spectral-formats": "^1.8.1",
+    "@camunda8/spectral-runtime": "^1.1.2",
     "@stoplight/better-ajv-errors": "1.0.3",
     "@stoplight/json": "^3.17.1",
     "ajv": "^8.18.0",
@@ -32,6 +32,6 @@
     "tslib": "^2.8.1"
   },
   "devDependencies": {
-    "@camunda/spectral-parsers": "*"
+    "@camunda8/spectral-parsers": "*"
   }
 }

@@ -1,4 +1,4 @@
-import type { Ruleset } from '@camunda/spectral-core';
+import type { Ruleset } from '@camunda8/spectral-core';
 import type { Plugin } from 'rollup';
 import type { IO } from '../types';
 

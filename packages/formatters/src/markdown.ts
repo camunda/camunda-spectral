@@ -1,4 +1,4 @@
-import { printPath, PrintStyle } from '@camunda/spectral-runtime';
+import { printPath, PrintStyle } from '@camunda8/spectral-runtime';
 import { Formatter, FormatterContext } from './types';
 import { groupBySource } from './utils';
 import { DiagnosticSeverity } from '@stoplight/types';

@@ -24,7 +24,7 @@
  * @author Ava Thorn
  */
 
-import { printPath, PrintStyle } from '@camunda/spectral-runtime';
+import { printPath, PrintStyle } from '@camunda8/spectral-runtime';
 import { IDiagnostic, IRange } from '@stoplight/types';
 import chalk from 'chalk';
 

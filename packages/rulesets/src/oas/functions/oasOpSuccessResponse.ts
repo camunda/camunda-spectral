@@ -1,5 +1,5 @@
-import { createRulesetFunction } from '@camunda/spectral-core';
-import { oas3 } from '@camunda/spectral-formats';
+import { createRulesetFunction } from '@camunda8/spectral-core';
+import { oas3 } from '@camunda8/spectral-formats';
 
 export default createRulesetFunction<Record<string, unknown>, null>(
   {

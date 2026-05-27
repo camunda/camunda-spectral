@@ -1,6 +1,6 @@
-import { oas2, oas3_0 } from '@camunda/spectral-formats';
-import { printValue } from '@camunda/spectral-runtime';
-import { createRulesetFunction, Document, IFunctionResult } from '@camunda/spectral-core';
+import { oas2, oas3_0 } from '@camunda8/spectral-formats';
+import { printValue } from '@camunda8/spectral-runtime';
+import { createRulesetFunction, Document, IFunctionResult } from '@camunda8/spectral-core';
 import type { JSONSchema4TypeName, JSONSchema6TypeName, JSONSchema7TypeName } from 'json-schema';
 
 function getDataType(

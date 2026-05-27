@@ -1,5 +1,5 @@
-import { asyncapi2, asyncapi3, jsonSchemaLoose, oas2, oas3, oas3_0, oas3_1 } from '@camunda/spectral-formats';
-import { truthy } from '@camunda/spectral-functions';
+import { asyncapi2, asyncapi3, jsonSchemaLoose, oas2, oas3, oas3_0, oas3_1 } from '@camunda8/spectral-formats';
+import { truthy } from '@camunda8/spectral-functions';
 export default {
   formats: [oas2, oas3_1, oas3_0, jsonSchemaLoose],
   rules: {

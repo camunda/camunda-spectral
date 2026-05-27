@@ -1,5 +1,5 @@
 import { DiagnosticSeverity, Dictionary } from '@stoplight/types';
-import { IRuleResult } from '@camunda/spectral-core';
+import { IRuleResult } from '@camunda8/spectral-core';
 import { groupBySeverity } from './groupBySeverity';
 import { pluralize } from './pluralize';
 

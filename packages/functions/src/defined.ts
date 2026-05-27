@@ -1,4 +1,4 @@
-import { createRulesetFunction } from '@camunda/spectral-core';
+import { createRulesetFunction } from '@camunda8/spectral-core';
 
 import { optionSchemas } from './optionSchemas';
 

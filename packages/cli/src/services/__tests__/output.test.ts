@@ -1,11 +1,11 @@
 import { DiagnosticSeverity } from '@stoplight/types';
 import * as fs from 'fs';
 import * as process from 'process';
-import * as formatters from '@camunda/spectral-formatters';
+import * as formatters from '@camunda8/spectral-formatters';
 import { OutputFormat } from '../config';
 import { formatOutput, writeOutput } from '../output';
 
-jest.mock('@camunda/spectral-formatters');
+jest.mock('@camunda8/spectral-formatters');
 jest.mock('fs', () => ({
   readFileSync: jest.requireActual('fs').readFileSync,
   promises: {

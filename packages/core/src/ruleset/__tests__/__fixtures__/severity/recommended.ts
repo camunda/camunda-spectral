@@ -1,4 +1,4 @@
-import type { RulesetDefinition } from '@camunda/spectral-core';
+import type { RulesetDefinition } from '@camunda8/spectral-core';
 import shared from './shared';
 
 export { ruleset as default };

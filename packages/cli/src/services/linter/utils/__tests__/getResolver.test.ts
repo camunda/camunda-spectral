@@ -1,5 +1,5 @@
 import { join, relative } from '@stoplight/path';
-import { createHttpAndFileResolver } from '@camunda/spectral-ref-resolver';
+import { createHttpAndFileResolver } from '@camunda8/spectral-ref-resolver';
 import { getResolver } from '../getResolver';
 
 const customResolver = require('./__fixtures__/resolver');

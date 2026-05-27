@@ -1,4 +1,4 @@
-import { RulesetDefinition } from '@camunda/spectral-core';
+import { RulesetDefinition } from '@camunda8/spectral-core';
 
 import _scope from './scope';
 import _version from './version-check';

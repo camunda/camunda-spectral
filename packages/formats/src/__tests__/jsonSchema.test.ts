@@ -7,7 +7,7 @@ import {
   jsonSchemaDraft2020_12,
   jsonSchemaDraft2019_09,
 } from '../jsonSchema';
-import type { Format } from '@camunda/spectral-core';
+import type { Format } from '@camunda8/spectral-core';
 
 describe('JSON Schema format', () => {
   describe('JSON Schema strict', () => {

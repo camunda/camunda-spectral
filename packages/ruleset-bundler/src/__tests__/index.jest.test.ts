@@ -1,5 +1,5 @@
-import { serveAssets } from '@camunda/spectral-test-utils';
-import { fetch } from '@camunda/spectral-runtime';
+import { serveAssets } from '@camunda8/spectral-test-utils';
+import { fetch } from '@camunda8/spectral-runtime';
 import * as fs from 'fs';
 import { bundleRuleset } from '../index';
 import { IO } from '../types';
@@ -99,8 +99,8 @@ export { spectral as default };`);
 
   it('given node target, should support commonjs for remote ruleset with builtin modules', async () => {
     serveAssets({
-      'https://tmp/input.js': `var spectralFormats = require('@camunda/spectral-formats');
-var spectralFunctions = require('@camunda/spectral-functions');
+      'https://tmp/input.js': `var spectralFormats = require('@camunda8/spectral-formats');
+var spectralFunctions = require('@camunda8/spectral-functions');
 const ruleset = {
   rules: {
     'my-rule': {

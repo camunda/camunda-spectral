@@ -1,4 +1,4 @@
-const { schema } = require('@camunda/spectral-functions');
+const { schema } = require('@camunda8/spectral-functions');
 
 module.exports = {
   rules: {

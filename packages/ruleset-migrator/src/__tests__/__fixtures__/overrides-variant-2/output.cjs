@@ -1,5 +1,5 @@
-const { truthy } = require('@camunda/spectral-functions');
-const { oas } = require('@camunda/spectral-rulesets');
+const { truthy } = require('@camunda8/spectral-functions');
+const { oas } = require('@camunda8/spectral-rulesets');
 module.exports = {
   extends: [oas],
   aliases: {

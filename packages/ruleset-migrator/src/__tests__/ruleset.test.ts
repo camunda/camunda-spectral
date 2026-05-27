@@ -2,10 +2,10 @@ import { vol } from 'memfs';
 import * as path from '@stoplight/path';
 import * as prettier from 'prettier/standalone';
 import * as parserBabel from 'prettier/parser-babel';
-import { Ruleset } from '@camunda/spectral-core';
+import { Ruleset } from '@camunda8/spectral-core';
 import { DiagnosticSeverity } from '@stoplight/types';
 import fetchMockLib, { FetchMock as FetchMockInstance } from 'fetch-mock';
-import { serveAssets } from '@camunda/spectral-test-utils';
+import { serveAssets } from '@camunda8/spectral-test-utils';
 
 import { migrateRuleset } from '..';
 import fixtures from './__fixtures__/.cache/index.json';
@@ -93,10 +93,10 @@ describe('migrator', () => {
       }),
     )(_module, (id: string): unknown => {
       switch (id) {
-        case '@camunda/spectral-functions':
-          return require('@camunda/spectral-functions') as unknown;
-        case '@camunda/spectral-rulesets':
-          return require('@camunda/spectral-rulesets') as unknown;
+        case '@camunda8/spectral-functions':
+          return require('@camunda8/spectral-functions') as unknown;
+        case '@camunda8/spectral-rulesets':
+          return require('@camunda8/spectral-rulesets') as unknown;
         default:
           throw new ReferenceError(`${id} not found`);
       }
@@ -105,7 +105,7 @@ describe('migrator', () => {
     const ruleset = new Ruleset(_module.exports);
 
     expect(Object.keys(ruleset.rules)).toEqual([
-      ...Object.keys(require('@camunda/spectral-rulesets').oas.rules),
+      ...Object.keys(require('@camunda8/spectral-rulesets').oas.rules),
       'valid-type',
     ]);
 
@@ -172,7 +172,7 @@ describe('migrator', () => {
         format: 'esm',
         fs: vol as any,
       }),
-    ).resolves.toEqual(`import {jsonSchemaDraft2} from "@camunda/spectral-formats";
+    ).resolves.toEqual(`import {jsonSchemaDraft2} from "@camunda8/spectral-formats";
 export default {
   "formats": [jsonSchemaDraft2]
 };
@@ -213,7 +213,7 @@ export default {
         format: 'esm',
         fs: vol as any,
       }),
-    ).toEqual(`import {oas} from "@camunda/spectral-rulesets";
+    ).toEqual(`import {oas} from "@camunda8/spectral-rulesets";
 export default {
   "extends": [{
     "extends": [oas, {
@@ -300,8 +300,8 @@ export default {
           fs: vol as any,
           npmRegistry: 'https://unpkg.com/',
         }),
-      ).toEqual(`import {oas2} from "https://unpkg.com/@camunda/spectral-formats";
-import {truthy} from "https://unpkg.com/@camunda/spectral-functions";
+      ).toEqual(`import {oas2} from "https://unpkg.com/@camunda8/spectral-formats";
+import {truthy} from "https://unpkg.com/@camunda8/spectral-functions";
 import test from "https://unpkg.com/custom-npm-ruleset/functions/test.js";
 export default {
   "extends": [{

@@ -1,4 +1,4 @@
-import type { createRulesetFunction } from '@camunda/spectral-core';
+import type { createRulesetFunction } from '@camunda8/spectral-core';
 import { CasingType } from './types';
 
 type CustomFunctionOptionsSchema = Parameters<typeof createRulesetFunction>[0]['input'];

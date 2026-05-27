@@ -1,6 +1,6 @@
 import { isObject } from 'lodash';
-import { createRulesetFunction } from '@camunda/spectral-core';
-import { printValue } from '@camunda/spectral-runtime';
+import { createRulesetFunction } from '@camunda8/spectral-core';
+import { printValue } from '@camunda8/spectral-runtime';
 
 import { optionSchemas } from './optionSchemas';
 

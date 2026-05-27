@@ -1,5 +1,5 @@
 import { DiagnosticSeverity } from '@stoplight/types';
-import type { IRuleResult } from '@camunda/spectral-core';
+import type { IRuleResult } from '@camunda8/spectral-core';
 import { codeClimate } from '../code-climate';
 
 const cwd = process.cwd();

@@ -1,5 +1,5 @@
 import arazzoStepSuccessActionsValidation from '../arazzoStepSuccessActionsValidation';
-import type { RulesetFunctionContext } from '@camunda/spectral-core';
+import type { RulesetFunctionContext } from '@camunda8/spectral-core';
 import { ArazzoSpecification } from '../types/arazzoTypes';
 
 const runRule = (target: ArazzoSpecification, _contextOverrides: Partial<RulesetFunctionContext> = {}) => {

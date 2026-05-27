@@ -1,5 +1,5 @@
 import { Segment } from '@stoplight/types';
-import { printValue } from '@camunda/spectral-runtime';
+import { printValue } from '@camunda8/spectral-runtime';
 import { Replacer } from '../../utils/replacer';
 
 export type MessageVars = {

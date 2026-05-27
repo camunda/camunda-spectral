@@ -1,6 +1,6 @@
-import { oas2 } from '@camunda/spectral-formats';
-import { truthy } from '@camunda/spectral-functions';
-import type { RulesetDefinition } from '@camunda/spectral-core';
+import { oas2 } from '@camunda8/spectral-formats';
+import { truthy } from '@camunda8/spectral-functions';
+import type { RulesetDefinition } from '@camunda8/spectral-core';
 
 export { ruleset as default };
 

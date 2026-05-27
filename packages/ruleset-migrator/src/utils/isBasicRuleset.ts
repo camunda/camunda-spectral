@@ -1,4 +1,4 @@
-import { fetch as defaultFetch } from '@camunda/spectral-runtime';
+import { fetch as defaultFetch } from '@camunda8/spectral-runtime';
 import { isURL, extname } from '@stoplight/path';
 import type { Fetch } from '../types';
 

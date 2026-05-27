@@ -8,13 +8,13 @@ describe('isPackageImport util', () => {
     'lodash/get',
     'lodash/get.js',
     '@stoplight/path',
-    '@camunda/spectral-core',
-    '@camunda/spectral-core/dist/file.js',
+    '@camunda8/spectral-core',
+    '@camunda8/spectral-core/dist/file.js',
   ])('given valid %s package import, should return true', input => {
     expect(isPackageImport(input)).toBe(true);
   });
 
-  it.each(['', 'spectral:oas', '/nimma/legacy', 'path', 'https://esm.sh/@camunda/spectral-core'])(
+  it.each(['', 'spectral:oas', '/nimma/legacy', 'path', 'https://esm.sh/@camunda8/spectral-core'])(
     'given invalid %s import, should return false',
     input => {
       expect(isPackageImport(input)).toBe(false);
