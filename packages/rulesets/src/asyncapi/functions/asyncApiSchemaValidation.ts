@@ -1,6 +1,6 @@
 import type { JsonPath } from '@stoplight/types';
-import { createRulesetFunction, IFunctionResult } from '@stoplight/spectral-core';
-import { schema } from '@stoplight/spectral-functions';
+import { createRulesetFunction, IFunctionResult } from '@camunda/spectral-core';
+import { schema } from '@camunda/spectral-functions';
 
 export type Options = { type: 'default' | 'examples' };
 

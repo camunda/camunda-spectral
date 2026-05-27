@@ -1,4 +1,4 @@
-import type { IFunctionResult } from '@stoplight/spectral-core';
+import type { IFunctionResult } from '@camunda/spectral-core';
 import getAllFailureActions from './utils/getAllFailureActions';
 import arazzoCriterionValidation from './arazzoCriterionValidation';
 import arazzoRuntimeExpressionValidation from './arazzoRuntimeExpressionValidation';

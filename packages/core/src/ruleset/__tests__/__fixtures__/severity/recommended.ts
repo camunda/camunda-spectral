@@ -1,4 +1,4 @@
-import type { RulesetDefinition } from '@stoplight/spectral-core';
+import type { RulesetDefinition } from '@camunda/spectral-core';
 import shared from './shared';
 
 export { ruleset as default };

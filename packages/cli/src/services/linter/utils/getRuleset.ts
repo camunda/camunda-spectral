@@ -1,17 +1,17 @@
 import { Optional } from '@stoplight/types';
-import { Ruleset, RulesetDefinition, RulesetSourceContext } from '@stoplight/spectral-core';
-import { Json, Yaml } from '@stoplight/spectral-parsers';
+import { Ruleset, RulesetDefinition, RulesetSourceContext } from '@camunda/spectral-core';
+import { Json, Yaml } from '@camunda/spectral-parsers';
 import * as fs from 'fs';
 import * as path from '@stoplight/path';
 import * as process from 'process';
 import { createRequire } from 'module';
-import { fetch } from '@stoplight/spectral-runtime';
-import { migrateRuleset, isBasicRuleset } from '@stoplight/spectral-ruleset-migrator';
-import { bundleRuleset } from '@stoplight/spectral-ruleset-bundler';
-import { node } from '@stoplight/spectral-ruleset-bundler/presets/node';
-import { commonjs } from '@stoplight/spectral-ruleset-bundler/plugins/commonjs';
-import { stdin } from '@stoplight/spectral-ruleset-bundler/plugins/stdin';
-import { builtins } from '@stoplight/spectral-ruleset-bundler/plugins/builtins';
+import { fetch } from '@camunda/spectral-runtime';
+import { migrateRuleset, isBasicRuleset } from '@camunda/spectral-ruleset-migrator';
+import { bundleRuleset } from '@camunda/spectral-ruleset-bundler';
+import { node } from '@camunda/spectral-ruleset-bundler/presets/node';
+import { commonjs } from '@camunda/spectral-ruleset-bundler/plugins/commonjs';
+import { stdin } from '@camunda/spectral-ruleset-bundler/plugins/stdin';
+import { builtins } from '@camunda/spectral-ruleset-bundler/plugins/builtins';
 import { isError, isObject } from 'lodash';
 import { CLIError } from '../../../errors';
 

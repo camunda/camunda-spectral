@@ -1,4 +1,4 @@
-import { IFunctionResult } from '@stoplight/spectral-core';
+import { IFunctionResult } from '@camunda/spectral-core';
 import validateRuntimeExpression from './arazzoRuntimeExpressionValidation';
 import { Criterion, ArazzoSpecification } from './types/arazzoTypes';
 

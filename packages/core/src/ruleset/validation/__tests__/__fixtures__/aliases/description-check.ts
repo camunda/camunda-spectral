@@ -1,6 +1,6 @@
-import { pattern } from '@stoplight/spectral-functions';
+import { pattern } from '@camunda/spectral-functions';
 import { DiagnosticSeverity } from '@stoplight/types';
-import { RulesetDefinition } from '@stoplight/spectral-core';
+import { RulesetDefinition } from '@camunda/spectral-core';
 
 export { ruleset as default };
 

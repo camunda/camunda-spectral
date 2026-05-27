@@ -1,4 +1,4 @@
-import { RulesetDefinition } from '@stoplight/spectral-core';
+import { RulesetDefinition } from '@camunda/spectral-core';
 
 import _scope from './scope';
 import _desc from './description-check';

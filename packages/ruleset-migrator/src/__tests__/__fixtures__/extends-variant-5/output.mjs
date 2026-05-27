@@ -1,4 +1,4 @@
-import { truthy } from '@stoplight/spectral-functions';
+import { truthy } from '@camunda/spectral-functions';
 export default {
   extends: [
     {

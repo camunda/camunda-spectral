@@ -1,5 +1,5 @@
-import { createRulesetFunction } from '@stoplight/spectral-core';
-import { printValue } from '@stoplight/spectral-runtime';
+import { createRulesetFunction } from '@camunda/spectral-core';
+import { printValue } from '@camunda/spectral-runtime';
 
 import { optionSchemas } from './optionSchemas';
 

@@ -1,5 +1,5 @@
 import arazzoWorkflowDependsOnValidation from '../arazzoWorkflowDependsOnValidation';
-import { IFunctionResult } from '@stoplight/spectral-core';
+import { IFunctionResult } from '@camunda/spectral-core';
 import { ArazzoSpecification } from '../types/arazzoTypes';
 
 const runRule = (target: ArazzoSpecification): IFunctionResult[] => {

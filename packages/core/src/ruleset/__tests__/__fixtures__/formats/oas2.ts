@@ -1,6 +1,6 @@
-import { oas2 } from '@stoplight/spectral-formats';
-import { truthy } from '@stoplight/spectral-functions';
-import type { RulesetDefinition } from '@stoplight/spectral-core';
+import { oas2 } from '@camunda/spectral-formats';
+import { truthy } from '@camunda/spectral-functions';
+import type { RulesetDefinition } from '@camunda/spectral-core';
 
 export { ruleset as default };
 

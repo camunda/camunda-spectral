@@ -1,4 +1,4 @@
-const { truthy } = require('@stoplight/spectral-functions');
+const { truthy } = require('@camunda/spectral-functions');
 
 module.exports = {
   'rules': {

@@ -1,6 +1,6 @@
-import { jsonSchemaDraft4, jsonSchemaDraft7 } from '@stoplight/spectral-formats';
-import { schema } from '@stoplight/spectral-functions';
-import { RulesetDefinition } from '@stoplight/spectral-core';
+import { jsonSchemaDraft4, jsonSchemaDraft7 } from '@camunda/spectral-formats';
+import { schema } from '@camunda/spectral-functions';
+import { RulesetDefinition } from '@camunda/spectral-core';
 
 import _base from './_base';
 

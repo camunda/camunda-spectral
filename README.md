@@ -35,13 +35,13 @@
 The easiest way to install spectral is to use either [npm](https://www.npmjs.com/):
 
 ```bash
-npm install -g @stoplight/spectral-cli
+npm install -g @camunda/spectral-cli
 ```
 
 Or [yarn](https://yarnpkg.com/):
 
 ```
-yarn global add @stoplight/spectral-cli
+yarn global add @camunda/spectral-cli
 ```
 
 There are also [additional installation options](https://meta.stoplight.io/docs/spectral/ZG9jOjYyMDc0Mw-installation).

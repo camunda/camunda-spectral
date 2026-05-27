@@ -1,8 +1,8 @@
-import '@stoplight/spectral-test-utils/matchers';
+import '@camunda/spectral-test-utils/matchers';
 
 import defined from '../defined';
 import testFunction from './__helpers__/tester';
-import { RulesetValidationError } from '@stoplight/spectral-core';
+import { RulesetValidationError } from '@camunda/spectral-core';
 import AggregateError = require('es-aggregate-error');
 
 const runDefined = testFunction.bind(null, defined);

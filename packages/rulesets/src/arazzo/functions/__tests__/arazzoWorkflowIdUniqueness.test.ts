@@ -1,4 +1,4 @@
-import { IFunctionResult } from '@stoplight/spectral-core';
+import { IFunctionResult } from '@camunda/spectral-core';
 import arazzoWorkflowIdUniqueness from '../arazzoWorkflowIdUniqueness';
 import { ArazzoSpecification } from '../types/arazzoTypes';
 

@@ -1,4 +1,4 @@
-const { pattern } = require('@stoplight/spectral-functions');
+const { pattern } = require('@camunda/spectral-functions');
 
 module.exports = {
   rules: {

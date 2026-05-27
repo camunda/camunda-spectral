@@ -1,5 +1,5 @@
-import { truthy } from '@stoplight/spectral-functions';
-import { oas } from '@stoplight/spectral-rulesets';
+import { truthy } from '@camunda/spectral-functions';
+import { oas } from '@camunda/spectral-rulesets';
 export default {
   extends: [oas],
   aliases: {

@@ -9,7 +9,7 @@ import {
   aas2_6,
   aas3,
   aas3_0,
-} from '@stoplight/spectral-formats';
+} from '@camunda/spectral-formats';
 import {
   truthy,
   pattern,
@@ -17,7 +17,7 @@ import {
   schema,
   undefined,
   alphabetical,
-} from '@stoplight/spectral-functions';
+} from '@camunda/spectral-functions';
 
 import asyncApiChannelParameters from './functions/asyncApiChannelParameters';
 import asyncApi2ChannelServers from './functions/asyncApi2ChannelServers';

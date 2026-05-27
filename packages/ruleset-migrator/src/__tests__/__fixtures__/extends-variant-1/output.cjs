@@ -1,4 +1,4 @@
-const { oas } = require('@stoplight/spectral-rulesets');
+const { oas } = require('@camunda/spectral-rulesets');
 module.exports = {
   extends: [oas],
 };

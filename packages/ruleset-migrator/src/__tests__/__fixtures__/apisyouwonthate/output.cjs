@@ -1,5 +1,5 @@
-const { oas2, oas3 } = require('@stoplight/spectral-formats');
-const { enumeration, falsy, pattern, schema, truthy } = require('@stoplight/spectral-functions');
+const { oas2, oas3 } = require('@camunda/spectral-formats');
+const { enumeration, falsy, pattern, schema, truthy } = require('@camunda/spectral-functions');
 module.exports = {
   rules: {
     'api-home': {

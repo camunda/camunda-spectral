@@ -1,6 +1,6 @@
-import { createRulesetFunction } from '@stoplight/spectral-core';
-import type { IFunctionResult } from '@stoplight/spectral-core';
-import { arazzo1_0 } from '@stoplight/spectral-formats';
+import { createRulesetFunction } from '@camunda/spectral-core';
+import type { IFunctionResult } from '@camunda/spectral-core';
+import { arazzo1_0 } from '@camunda/spectral-formats';
 import { isPlainObject, resolveInlineRef } from '@stoplight/json';
 import type { ErrorObject } from 'ajv';
 import leven from 'leven';

@@ -1,5 +1,5 @@
-const { oas2, oas3 } = require('@stoplight/spectral-formats');
-const { oas } = require('@stoplight/spectral-rulesets');
+const { oas2, oas3 } = require('@camunda/spectral-formats');
+const { oas } = require('@camunda/spectral-rulesets');
 module.exports = {
   overrides: [
     {

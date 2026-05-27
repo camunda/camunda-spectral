@@ -1,5 +1,5 @@
 import shared from './shared';
-import {RulesetDefinition} from "@stoplight/spectral-core";
+import {RulesetDefinition} from "@camunda/spectral-core";
 
 export default {
   extends: [[shared, 'all']],

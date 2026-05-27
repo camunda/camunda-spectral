@@ -1,4 +1,4 @@
-const { length: length$0, truthy } = require('@stoplight/spectral-functions');
+const { length: length$0, truthy } = require('@camunda/spectral-functions');
 module.exports = {
   rules: {
     rule: {

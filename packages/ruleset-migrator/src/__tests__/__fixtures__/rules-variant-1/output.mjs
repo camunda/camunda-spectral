@@ -1,5 +1,5 @@
-import { oas2 } from '@stoplight/spectral-formats';
-import { truthy } from '@stoplight/spectral-functions';
+import { oas2 } from '@camunda/spectral-formats';
+import { truthy } from '@camunda/spectral-functions';
 export default {
   rules: {
     'oas3-schema': 'error',

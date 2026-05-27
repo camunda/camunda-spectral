@@ -1,4 +1,4 @@
-import { falsy, truthy } from "@stoplight/spectral-functions";
+import { falsy, truthy } from "@camunda/spectral-functions";
 import pascalCase from "/.tmp/spectral/extends-variant-8/assets/shared/functions/pascalCase.js";
 export default {
   extends: [

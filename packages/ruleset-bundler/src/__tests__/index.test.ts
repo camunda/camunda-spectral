@@ -1,5 +1,5 @@
-import { serveAssets } from '@stoplight/spectral-test-utils';
-import { fetch } from '@stoplight/spectral-runtime';
+import { serveAssets } from '@camunda/spectral-test-utils';
+import { fetch } from '@camunda/spectral-runtime';
 import * as fs from 'fs';
 import { bundleRuleset } from '../index';
 import { IO } from '../types';

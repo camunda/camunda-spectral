@@ -1,7 +1,7 @@
 import * as fs from 'fs';
-import { serveAssets } from '@stoplight/spectral-test-utils';
-import * as runtime from '@stoplight/spectral-runtime';
-import * as functions from '@stoplight/spectral-functions';
+import { serveAssets } from '@camunda/spectral-test-utils';
+import * as runtime from '@camunda/spectral-runtime';
+import * as functions from '@camunda/spectral-functions';
 
 import { BundleOptions, bundleRuleset } from '../../index';
 import type { IO } from '../../types';
@@ -32,8 +32,8 @@ describe('Builtins Plugin', () => {
   describe.each<BundleOptions['target']>(['browser', 'node', 'runtime'])('given %s target', target => {
     it('should inline Spectral packages & expose it to the runtime', async () => {
       serveAssets({
-        '/tmp/input.js': `import { schema } from '@stoplight/spectral-functions';
-import { oas } from '@stoplight/spectral-rulesets';
+        '/tmp/input.js': `import { schema } from '@camunda/spectral-functions';
+import { oas } from '@camunda/spectral-rulesets';
 
 export default {
   extends: [oas],
@@ -60,23 +60,23 @@ export default {
       });
 
       expect(code)
-        .toEqual(`const alphabetical = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@stoplight/spectral-functions']['alphabetical'];
-const casing = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@stoplight/spectral-functions']['casing'];
-const defined = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@stoplight/spectral-functions']['defined'];
-const enumeration = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@stoplight/spectral-functions']['enumeration'];
-const falsy = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@stoplight/spectral-functions']['falsy'];
-const length = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@stoplight/spectral-functions']['length'];
-const pattern = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@stoplight/spectral-functions']['pattern'];
-const schema = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@stoplight/spectral-functions']['schema'];
-const truthy = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@stoplight/spectral-functions']['truthy'];
-const undefined$1 = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@stoplight/spectral-functions']['undefined'];
-const unreferencedReusableObject = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@stoplight/spectral-functions']['unreferencedReusableObject'];
-const xor = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@stoplight/spectral-functions']['xor'];
-const or = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@stoplight/spectral-functions']['or'];
+        .toEqual(`const alphabetical = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@camunda/spectral-functions']['alphabetical'];
+const casing = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@camunda/spectral-functions']['casing'];
+const defined = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@camunda/spectral-functions']['defined'];
+const enumeration = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@camunda/spectral-functions']['enumeration'];
+const falsy = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@camunda/spectral-functions']['falsy'];
+const length = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@camunda/spectral-functions']['length'];
+const pattern = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@camunda/spectral-functions']['pattern'];
+const schema = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@camunda/spectral-functions']['schema'];
+const truthy = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@camunda/spectral-functions']['truthy'];
+const undefined$1 = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@camunda/spectral-functions']['undefined'];
+const unreferencedReusableObject = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@camunda/spectral-functions']['unreferencedReusableObject'];
+const xor = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@camunda/spectral-functions']['xor'];
+const or = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@camunda/spectral-functions']['or'];
 
-const oas = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@stoplight/spectral-rulesets']['oas'];
-const asyncapi = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@stoplight/spectral-rulesets']['asyncapi'];
-const arazzo = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@stoplight/spectral-rulesets']['arazzo'];
+const oas = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@camunda/spectral-rulesets']['oas'];
+const asyncapi = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@camunda/spectral-rulesets']['asyncapi'];
+const arazzo = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@camunda/spectral-rulesets']['arazzo'];
 
 var input = {
   extends: [oas],
@@ -99,13 +99,13 @@ export { input as default };
 `);
 
       expect(
-        globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@stoplight/spectral-functions'],
+        globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@camunda/spectral-functions'],
       ).toStrictEqual(functions);
     });
 
     it('should support overrides', async () => {
       serveAssets({
-        '/tmp/input.js': `import { readFile } from '@stoplight/spectral-runtime';
+        '/tmp/input.js': `import { readFile } from '@camunda/spectral-runtime';
 
 readFile();`,
       });
@@ -118,7 +118,7 @@ readFile();`,
         target,
         plugins: [
           builtins({
-            '@stoplight/spectral-runtime': {
+            '@camunda/spectral-runtime': {
               readFile,
             },
           }),
@@ -127,27 +127,27 @@ readFile();`,
       });
 
       expect(code)
-        .toEqual(`const fetch = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@stoplight/spectral-runtime']['fetch'];
-const DEFAULT_REQUEST_OPTIONS = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@stoplight/spectral-runtime']['DEFAULT_REQUEST_OPTIONS'];
-const decodeSegmentFragment = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@stoplight/spectral-runtime']['decodeSegmentFragment'];
-const printError = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@stoplight/spectral-runtime']['printError'];
-const PrintStyle = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@stoplight/spectral-runtime']['PrintStyle'];
-const printPath = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@stoplight/spectral-runtime']['printPath'];
-const printValue = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@stoplight/spectral-runtime']['printValue'];
-const startsWithProtocol = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@stoplight/spectral-runtime']['startsWithProtocol'];
-const isAbsoluteRef = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@stoplight/spectral-runtime']['isAbsoluteRef'];
-const traverseObjUntilRef = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@stoplight/spectral-runtime']['traverseObjUntilRef'];
-const getEndRef = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@stoplight/spectral-runtime']['getEndRef'];
-const safePointerToPath = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@stoplight/spectral-runtime']['safePointerToPath'];
-const getClosestJsonPath = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@stoplight/spectral-runtime']['getClosestJsonPath'];
-const readFile = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@stoplight/spectral-runtime']['readFile'];
-const readParsable = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@stoplight/spectral-runtime']['readParsable'];
+        .toEqual(`const fetch = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@camunda/spectral-runtime']['fetch'];
+const DEFAULT_REQUEST_OPTIONS = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@camunda/spectral-runtime']['DEFAULT_REQUEST_OPTIONS'];
+const decodeSegmentFragment = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@camunda/spectral-runtime']['decodeSegmentFragment'];
+const printError = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@camunda/spectral-runtime']['printError'];
+const PrintStyle = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@camunda/spectral-runtime']['PrintStyle'];
+const printPath = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@camunda/spectral-runtime']['printPath'];
+const printValue = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@camunda/spectral-runtime']['printValue'];
+const startsWithProtocol = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@camunda/spectral-runtime']['startsWithProtocol'];
+const isAbsoluteRef = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@camunda/spectral-runtime']['isAbsoluteRef'];
+const traverseObjUntilRef = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@camunda/spectral-runtime']['traverseObjUntilRef'];
+const getEndRef = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@camunda/spectral-runtime']['getEndRef'];
+const safePointerToPath = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@camunda/spectral-runtime']['safePointerToPath'];
+const getClosestJsonPath = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@camunda/spectral-runtime']['getClosestJsonPath'];
+const readFile = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@camunda/spectral-runtime']['readFile'];
+const readParsable = globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@camunda/spectral-runtime']['readParsable'];
 
 readFile();
 `);
 
       expect(
-        globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@stoplight/spectral-runtime'],
+        globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@camunda/spectral-runtime'],
       ).toStrictEqual({
         ...runtime,
         readFile,
@@ -156,7 +156,7 @@ readFile();
 
     it('should isolate each instance', async () => {
       serveAssets({
-        '/tmp/input.js': `import { readFile } from '@stoplight/spectral-runtime';
+        '/tmp/input.js': `import { readFile } from '@camunda/spectral-runtime';
 
 readFile();`,
       });
@@ -171,12 +171,12 @@ readFile();`,
         target,
         plugins: [
           builtins({
-            '@stoplight/spectral-runtime': {
+            '@camunda/spectral-runtime': {
               readFile,
             },
           }),
           builtins({
-            '@stoplight/spectral-runtime': {
+            '@camunda/spectral-runtime': {
               readFile: readFile2,
             },
           }),
@@ -185,14 +185,14 @@ readFile();`,
       });
 
       expect(
-        globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@stoplight/spectral-runtime'],
+        globalThis[Symbol.for('@stoplight-spectral/builtins')]['822928']['@camunda/spectral-runtime'],
       ).toStrictEqual({
         ...runtime,
         readFile,
       });
 
       expect(
-        globalThis[Symbol.for('@stoplight-spectral/builtins')]['750524']['@stoplight/spectral-runtime'],
+        globalThis[Symbol.for('@stoplight-spectral/builtins')]['750524']['@camunda/spectral-runtime'],
       ).toStrictEqual({
         ...runtime,
         readFile: readFile2,

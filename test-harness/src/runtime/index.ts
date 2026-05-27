@@ -1,4 +1,4 @@
-declare module '@stoplight/spectral-test-harness' {
+declare module '@camunda/spectral-test-harness' {
   export type SpawnFn = (
     command: string,
     env: Record<string, string>,

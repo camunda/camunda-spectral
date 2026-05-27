@@ -1,5 +1,5 @@
 {
-  "name": "@stoplight/spectral-formats",
+  "name": "@camunda/spectral-formats",
   "version": "1.8.2",
   "sideEffects": false,
   "homepage": "https://github.com/stoplightio/spectral",
@@ -19,8 +19,8 @@
     "node": "^16.20 || ^18.18 || >= 20.17"
   },
   "dependencies": {
+    "@camunda/spectral-core": "^1.19.2",
     "@stoplight/json": "^3.17.0",
-    "@stoplight/spectral-core": "^1.19.2",
     "@types/json-schema": "^7.0.7",
     "tslib": "^2.8.1"
   }

@@ -1,4 +1,4 @@
-import { createRulesetFunction } from '@stoplight/spectral-core';
+import { createRulesetFunction } from '@camunda/spectral-core';
 import { isObject } from './utils/isObject';
 
 const validConsumeValue = /(application\/x-www-form-urlencoded|multipart\/form-data)/;

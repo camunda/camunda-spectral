@@ -29,7 +29,7 @@ export default {
     {
       ...projectDefault,
       displayName: {
-        name: '@stoplight/spectral-cli',
+        name: '@camunda/spectral-cli',
         color: 'greenBright',
       },
       testMatch: ['<rootDir>/packages/cli/src/**/__tests__/**/*.{test,spec}.ts'],
@@ -37,7 +37,7 @@ export default {
     {
       ...projectDefault,
       displayName: {
-        name: '@stoplight/spectral-core',
+        name: '@camunda/spectral-core',
         color: 'magenta',
       },
       testMatch: ['<rootDir>/packages/core/src/**/__tests__/**/*.{test,spec}.ts'],
@@ -45,7 +45,7 @@ export default {
     {
       ...projectDefault,
       displayName: {
-        name: '@stoplight/spectral-formats',
+        name: '@camunda/spectral-formats',
         color: 'redBright',
       },
       testMatch: ['<rootDir>/packages/formats/src/**/__tests__/**/*.{test,spec}.ts'],
@@ -53,7 +53,7 @@ export default {
     {
       ...projectDefault,
       displayName: {
-        name: '@stoplight/spectral-functions',
+        name: '@camunda/spectral-functions',
         color: 'blueBright',
       },
       testMatch: ['<rootDir>/packages/functions/src/**/__tests__/**/*.{test,spec}.ts'],
@@ -61,7 +61,7 @@ export default {
     {
       ...projectDefault,
       displayName: {
-        name: '@stoplight/spectral-ruleset-bundler',
+        name: '@camunda/spectral-ruleset-bundler',
         color: 'blueBright',
       },
       setupFilesAfterEnv: ['<rootDir>/packages/ruleset-bundler/jest.setup.mjs'],
@@ -70,20 +70,20 @@ export default {
     {
       ...projectDefault,
       displayName: {
-        name: '@stoplight/spectral-ruleset-migrator',
+        name: '@camunda/spectral-ruleset-migrator',
         color: 'blueBright',
       },
       testMatch: ['<rootDir>/packages/ruleset-migrator/src/**/__tests__/**/*.{test,spec}.ts'],
     },
     {
       ...projectDefault,
-      displayName: '@stoplight/spectral-parsers',
+      displayName: '@camunda/spectral-parsers',
       testMatch: ['<rootDir>/packages/parsers/src/**/__tests__/**/*.{test,spec}.ts'],
     },
     {
       ...projectDefault,
       displayName: {
-        name: '@stoplight/spectral-ref-resolver',
+        name: '@camunda/spectral-ref-resolver',
         color: 'yellow',
       },
       testMatch: ['<rootDir>/packages/ref-resolver/src/**/__tests__/**/*.{test,spec}.ts'],
@@ -91,7 +91,7 @@ export default {
     {
       ...projectDefault,
       displayName: {
-        name: '@stoplight/spectral-rulesets',
+        name: '@camunda/spectral-rulesets',
         color: 'cyanBright',
       },
       setupFilesAfterEnv: ['<rootDir>/packages/rulesets/jest.setup.mjs'],
@@ -100,7 +100,7 @@ export default {
     {
       ...projectDefault,
       displayName: {
-        name: '@stoplight/spectral-runtime',
+        name: '@camunda/spectral-runtime',
         color: 'blue',
       },
       testMatch: ['<rootDir>/packages/runtime/src/**/__tests__/*.{test,spec}.ts'],
@@ -108,7 +108,7 @@ export default {
     {
       ...projectDefault,
       displayName: {
-        name: '@stoplight/spectral-formatters',
+        name: '@camunda/spectral-formatters',
         color: 'magenta',
       },
       testMatch: ['<rootDir>/packages/formatters/src/**/__tests__/*.{test,spec}.ts'],

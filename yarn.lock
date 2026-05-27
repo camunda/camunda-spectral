@@ -1478,6 +1478,250 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@camunda/spectral-cli@workspace:packages/cli":
+  version: 0.0.0-use.local
+  resolution: "@camunda/spectral-cli@workspace:packages/cli"
+  dependencies:
+    "@camunda/spectral-core": ^1.19.5
+    "@camunda/spectral-formatters": ^1.4.1
+    "@camunda/spectral-parsers": ^1.0.4
+    "@camunda/spectral-ref-resolver": ^1.0.4
+    "@camunda/spectral-ruleset-bundler": ^1.6.0
+    "@camunda/spectral-ruleset-migrator": ^1.11.0
+    "@camunda/spectral-rulesets": ">=1"
+    "@camunda/spectral-runtime": ^1.1.2
+    "@stoplight/json": ~3.21.0
+    "@stoplight/path": 1.3.2
+    "@stoplight/types": ^13.6.0
+    "@types/es-aggregate-error": ^1.0.2
+    "@types/xml2js": ^0.4.9
+    "@types/yargs": ^17.0.8
+    "@yao-pkg/pkg": 5.11.0
+    chalk: 4.1.2
+    es-aggregate-error: ^1.0.7
+    fast-glob: ~3.2.12
+    hpagent: ~1.2.0
+    lodash: ^4.18.1
+    nock: ^13.5.4
+    pony-cause: ^1.1.1
+    stacktracey: ^2.1.8
+    tslib: ^2.8.1
+    xml2js: ^0.5.0
+    yargs: ~17.7.2
+  bin:
+    spectral: ./dist/index.js
+  languageName: unknown
+  linkType: soft
+
+"@camunda/spectral-core@*, @camunda/spectral-core@>=1, @camunda/spectral-core@^1.19.2, @camunda/spectral-core@^1.19.4, @camunda/spectral-core@^1.19.5, @camunda/spectral-core@workspace:packages/core":
+  version: 0.0.0-use.local
+  resolution: "@camunda/spectral-core@workspace:packages/core"
+  dependencies:
+    "@camunda/spectral-formats": ^1.8.1
+    "@camunda/spectral-functions": "*"
+    "@camunda/spectral-parsers": "*"
+    "@camunda/spectral-ref-resolver": ^1.0.4
+    "@camunda/spectral-runtime": ^1.1.2
+    "@stoplight/better-ajv-errors": 1.0.3
+    "@stoplight/json": ~3.21.0
+    "@stoplight/path": 1.3.2
+    "@stoplight/types": ~13.6.0
+    "@stoplight/yaml": ^4.2.2
+    "@types/es-aggregate-error": ^1.0.2
+    "@types/json-schema": ^7.0.11
+    "@types/minimatch": ^3.0.5
+    "@types/treeify": ^1.0.0
+    ajv: ^8.18.0
+    ajv-errors: ~3.0.0
+    ajv-formats: ~2.1.1
+    es-aggregate-error: ^1.0.7
+    expr-eval-fork: ^3.0.1
+    jsonpath-plus: ^10.3.0
+    lodash: ^4.18.1
+    lodash.topath: ^4.5.2
+    minimatch: ^3.1.4
+    nimma: 0.2.3
+    nock: ^13.5.4
+    pony-cause: ^1.1.1
+    treeify: ^1.1.0
+    tslib: ^2.8.1
+  languageName: unknown
+  linkType: soft
+
+"@camunda/spectral-formats@^1.8.1, @camunda/spectral-formats@workspace:packages/formats":
+  version: 0.0.0-use.local
+  resolution: "@camunda/spectral-formats@workspace:packages/formats"
+  dependencies:
+    "@camunda/spectral-core": ^1.19.2
+    "@stoplight/json": ^3.17.0
+    "@types/json-schema": ^7.0.7
+    tslib: ^2.8.1
+  languageName: unknown
+  linkType: soft
+
+"@camunda/spectral-formatters@^1.4.1, @camunda/spectral-formatters@workspace:packages/formatters":
+  version: 0.0.0-use.local
+  resolution: "@camunda/spectral-formatters@workspace:packages/formatters"
+  dependencies:
+    "@camunda/spectral-core": ^1.19.4
+    "@camunda/spectral-runtime": ^1.1.2
+    "@stoplight/path": ^1.3.2
+    "@stoplight/types": ^13.15.0
+    "@types/markdown-escape": ^1.1.3
+    ast-types: ^0.14.2
+    astring: ^1.9.0
+    chalk: 4.1.2
+    cliui: 7.0.4
+    eol: 0.9.1
+    lodash: ^4.18.1
+    markdown-escape: ^2.0.0
+    node-html-parser: ^4.1.5
+    node-sarif-builder: ^2.0.3
+    strip-ansi: 6.0
+    text-table: ^0.2.0
+    tslib: ^2.8.1
+    xml2js: ^0.5.0
+  languageName: unknown
+  linkType: soft
+
+"@camunda/spectral-functions@*, @camunda/spectral-functions@>=1, @camunda/spectral-functions@^1.9.1, @camunda/spectral-functions@^1.9.3, @camunda/spectral-functions@workspace:packages/functions":
+  version: 0.0.0-use.local
+  resolution: "@camunda/spectral-functions@workspace:packages/functions"
+  dependencies:
+    "@camunda/spectral-core": ^1.19.4
+    "@camunda/spectral-formats": ^1.8.1
+    "@camunda/spectral-parsers": "*"
+    "@camunda/spectral-runtime": ^1.1.2
+    "@stoplight/better-ajv-errors": 1.0.3
+    "@stoplight/json": ^3.17.1
+    ajv: ^8.18.0
+    ajv-draft-04: ~1.0.0
+    ajv-errors: ~3.0.0
+    ajv-formats: ~2.1.1
+    lodash: ^4.18.1
+    tslib: ^2.8.1
+  languageName: unknown
+  linkType: soft
+
+"@camunda/spectral-parsers@*, @camunda/spectral-parsers@>=1, @camunda/spectral-parsers@^1.0.4, @camunda/spectral-parsers@workspace:packages/parsers":
+  version: 0.0.0-use.local
+  resolution: "@camunda/spectral-parsers@workspace:packages/parsers"
+  dependencies:
+    "@stoplight/json": ~3.21.0
+    "@stoplight/types": ^14.1.1
+    "@stoplight/yaml": ~4.3.0
+    tslib: ^2.8.1
+  languageName: unknown
+  linkType: soft
+
+"@camunda/spectral-ref-resolver@^1.0.4, @camunda/spectral-ref-resolver@workspace:packages/ref-resolver":
+  version: 0.0.0-use.local
+  resolution: "@camunda/spectral-ref-resolver@workspace:packages/ref-resolver"
+  dependencies:
+    "@camunda/spectral-runtime": ^1.1.2
+    "@stoplight/json-ref-readers": 1.2.2
+    "@stoplight/json-ref-resolver": ~3.1.6
+    dependency-graph: 0.11.0
+    tslib: ^2.8.1
+  languageName: unknown
+  linkType: soft
+
+"@camunda/spectral-ruleset-bundler@^1.6.0, @camunda/spectral-ruleset-bundler@workspace:packages/ruleset-bundler":
+  version: 0.0.0-use.local
+  resolution: "@camunda/spectral-ruleset-bundler@workspace:packages/ruleset-bundler"
+  dependencies:
+    "@camunda/spectral-core": ">=1"
+    "@camunda/spectral-formats": ^1.8.1
+    "@camunda/spectral-functions": ">=1"
+    "@camunda/spectral-parsers": ">=1"
+    "@camunda/spectral-ref-resolver": ^1.0.4
+    "@camunda/spectral-ruleset-migrator": ^1.9.6
+    "@camunda/spectral-rulesets": ">=1"
+    "@camunda/spectral-runtime": ^1.1.2
+    "@rollup/plugin-commonjs": ~22.0.2
+    "@stoplight/path": 1.3.2
+    "@stoplight/types": ^13.6.0
+    "@types/node": "*"
+    "@types/validate-npm-package-name": ^3.0.3
+    fetch-mock: ^12.6.0
+    memfs: ^3.5.3
+    pony-cause: 1.1.1
+    prettier: ^2.4.1
+    rollup: ~2.80.0
+    tslib: ^2.8.1
+    validate-npm-package-name: 3.0.0
+  languageName: unknown
+  linkType: soft
+
+"@camunda/spectral-ruleset-migrator@^1.11.0, @camunda/spectral-ruleset-migrator@^1.9.6, @camunda/spectral-ruleset-migrator@workspace:packages/ruleset-migrator":
+  version: 0.0.0-use.local
+  resolution: "@camunda/spectral-ruleset-migrator@workspace:packages/ruleset-migrator"
+  dependencies:
+    "@camunda/spectral-core": "*"
+    "@camunda/spectral-functions": ^1.9.1
+    "@camunda/spectral-rulesets": "*"
+    "@camunda/spectral-runtime": ^1.1.2
+    "@stoplight/json": ~3.21.0
+    "@stoplight/ordered-object-literal": ~1.0.4
+    "@stoplight/path": 1.3.2
+    "@stoplight/types": ^13.6.0
+    "@stoplight/yaml": ~4.2.3
+    "@types/node": "*"
+    ajv: ^8.18.0
+    ast-types: 0.14.2
+    astring: ^1.9.0
+    fetch-mock: ^12.6.0
+    json-schema-to-typescript: ^10.1.5
+    memfs: ^3.5.3
+    prettier: ^2.4.1
+    reserved: 0.1.2
+    tslib: ^2.8.1
+    validate-npm-package-name: 3.0.0
+  languageName: unknown
+  linkType: soft
+
+"@camunda/spectral-rulesets@*, @camunda/spectral-rulesets@>=1, @camunda/spectral-rulesets@workspace:packages/rulesets":
+  version: 0.0.0-use.local
+  resolution: "@camunda/spectral-rulesets@workspace:packages/rulesets"
+  dependencies:
+    "@asyncapi/specs": ^6.8.0
+    "@camunda/spectral-core": ^1.19.4
+    "@camunda/spectral-formats": ^1.8.1
+    "@camunda/spectral-functions": ^1.9.3
+    "@camunda/spectral-parsers": "*"
+    "@camunda/spectral-ref-resolver": ^1.0.4
+    "@camunda/spectral-runtime": ^1.1.2
+    "@stoplight/better-ajv-errors": 1.0.3
+    "@stoplight/json": ^3.17.0
+    "@stoplight/path": ^1.3.2
+    "@stoplight/types": ^13.6.0
+    "@types/json-schema": ^7.0.7
+    ajv: ^8.18.0
+    ajv-formats: ~2.1.1
+    gzip-size: ^6.0.0
+    immer: ^9.0.6
+    json-schema-traverse: ^1.0.0
+    leven: 3.1.0
+    lodash: ^4.18.1
+    terser: ^5.26.0
+    tslib: ^2.8.1
+  languageName: unknown
+  linkType: soft
+
+"@camunda/spectral-runtime@^1.1.2, @camunda/spectral-runtime@workspace:packages/runtime":
+  version: 0.0.0-use.local
+  resolution: "@camunda/spectral-runtime@workspace:packages/runtime"
+  dependencies:
+    "@stoplight/json": ^3.20.1
+    "@stoplight/path": ^1.3.2
+    "@stoplight/types": ^13.6.0
+    abort-controller: ^3.0.0
+    lodash: ^4.18.1
+    node-fetch: ^2.7.0
+    tslib: ^2.8.1
+  languageName: unknown
+  linkType: soft
+
 "@changesets/types@npm:^4.0.1":
   version: 4.1.0
   resolution: "@changesets/types@npm:4.1.0"
@@ -3091,250 +3335,6 @@ __metadata:
   checksum: 8a1143cef9edcf9fd8cb24ca3f250693d475ce1f635f0dc95e5b045aad303fbf4d702c939f0c4ed8d28a04208d1aa4471fb10912ef1e3a94a9e6810878a7cfbb
   languageName: node
   linkType: hard
-
-"@stoplight/spectral-cli@workspace:packages/cli":
-  version: 0.0.0-use.local
-  resolution: "@stoplight/spectral-cli@workspace:packages/cli"
-  dependencies:
-    "@stoplight/json": ~3.21.0
-    "@stoplight/path": 1.3.2
-    "@stoplight/spectral-core": ^1.19.5
-    "@stoplight/spectral-formatters": ^1.4.1
-    "@stoplight/spectral-parsers": ^1.0.4
-    "@stoplight/spectral-ref-resolver": ^1.0.4
-    "@stoplight/spectral-ruleset-bundler": ^1.6.0
-    "@stoplight/spectral-ruleset-migrator": ^1.11.0
-    "@stoplight/spectral-rulesets": ">=1"
-    "@stoplight/spectral-runtime": ^1.1.2
-    "@stoplight/types": ^13.6.0
-    "@types/es-aggregate-error": ^1.0.2
-    "@types/xml2js": ^0.4.9
-    "@types/yargs": ^17.0.8
-    "@yao-pkg/pkg": 5.11.0
-    chalk: 4.1.2
-    es-aggregate-error: ^1.0.7
-    fast-glob: ~3.2.12
-    hpagent: ~1.2.0
-    lodash: ^4.18.1
-    nock: ^13.5.4
-    pony-cause: ^1.1.1
-    stacktracey: ^2.1.8
-    tslib: ^2.8.1
-    xml2js: ^0.5.0
-    yargs: ~17.7.2
-  bin:
-    spectral: ./dist/index.js
-  languageName: unknown
-  linkType: soft
-
-"@stoplight/spectral-core@*, @stoplight/spectral-core@>=1, @stoplight/spectral-core@^1.19.2, @stoplight/spectral-core@^1.19.4, @stoplight/spectral-core@^1.19.5, @stoplight/spectral-core@workspace:packages/core":
-  version: 0.0.0-use.local
-  resolution: "@stoplight/spectral-core@workspace:packages/core"
-  dependencies:
-    "@stoplight/better-ajv-errors": 1.0.3
-    "@stoplight/json": ~3.21.0
-    "@stoplight/path": 1.3.2
-    "@stoplight/spectral-formats": ^1.8.1
-    "@stoplight/spectral-functions": "*"
-    "@stoplight/spectral-parsers": "*"
-    "@stoplight/spectral-ref-resolver": ^1.0.4
-    "@stoplight/spectral-runtime": ^1.1.2
-    "@stoplight/types": ~13.6.0
-    "@stoplight/yaml": ^4.2.2
-    "@types/es-aggregate-error": ^1.0.2
-    "@types/json-schema": ^7.0.11
-    "@types/minimatch": ^3.0.5
-    "@types/treeify": ^1.0.0
-    ajv: ^8.18.0
-    ajv-errors: ~3.0.0
-    ajv-formats: ~2.1.1
-    es-aggregate-error: ^1.0.7
-    expr-eval-fork: ^3.0.1
-    jsonpath-plus: ^10.3.0
-    lodash: ^4.18.1
-    lodash.topath: ^4.5.2
-    minimatch: ^3.1.4
-    nimma: 0.2.3
-    nock: ^13.5.4
-    pony-cause: ^1.1.1
-    treeify: ^1.1.0
-    tslib: ^2.8.1
-  languageName: unknown
-  linkType: soft
-
-"@stoplight/spectral-formats@^1.8.1, @stoplight/spectral-formats@workspace:packages/formats":
-  version: 0.0.0-use.local
-  resolution: "@stoplight/spectral-formats@workspace:packages/formats"
-  dependencies:
-    "@stoplight/json": ^3.17.0
-    "@stoplight/spectral-core": ^1.19.2
-    "@types/json-schema": ^7.0.7
-    tslib: ^2.8.1
-  languageName: unknown
-  linkType: soft
-
-"@stoplight/spectral-formatters@^1.4.1, @stoplight/spectral-formatters@workspace:packages/formatters":
-  version: 0.0.0-use.local
-  resolution: "@stoplight/spectral-formatters@workspace:packages/formatters"
-  dependencies:
-    "@stoplight/path": ^1.3.2
-    "@stoplight/spectral-core": ^1.19.4
-    "@stoplight/spectral-runtime": ^1.1.2
-    "@stoplight/types": ^13.15.0
-    "@types/markdown-escape": ^1.1.3
-    ast-types: ^0.14.2
-    astring: ^1.9.0
-    chalk: 4.1.2
-    cliui: 7.0.4
-    eol: 0.9.1
-    lodash: ^4.18.1
-    markdown-escape: ^2.0.0
-    node-html-parser: ^4.1.5
-    node-sarif-builder: ^2.0.3
-    strip-ansi: 6.0
-    text-table: ^0.2.0
-    tslib: ^2.8.1
-    xml2js: ^0.5.0
-  languageName: unknown
-  linkType: soft
-
-"@stoplight/spectral-functions@*, @stoplight/spectral-functions@>=1, @stoplight/spectral-functions@^1.9.1, @stoplight/spectral-functions@^1.9.3, @stoplight/spectral-functions@workspace:packages/functions":
-  version: 0.0.0-use.local
-  resolution: "@stoplight/spectral-functions@workspace:packages/functions"
-  dependencies:
-    "@stoplight/better-ajv-errors": 1.0.3
-    "@stoplight/json": ^3.17.1
-    "@stoplight/spectral-core": ^1.19.4
-    "@stoplight/spectral-formats": ^1.8.1
-    "@stoplight/spectral-parsers": "*"
-    "@stoplight/spectral-runtime": ^1.1.2
-    ajv: ^8.18.0
-    ajv-draft-04: ~1.0.0
-    ajv-errors: ~3.0.0
-    ajv-formats: ~2.1.1
-    lodash: ^4.18.1
-    tslib: ^2.8.1
-  languageName: unknown
-  linkType: soft
-
-"@stoplight/spectral-parsers@*, @stoplight/spectral-parsers@>=1, @stoplight/spectral-parsers@^1.0.4, @stoplight/spectral-parsers@workspace:packages/parsers":
-  version: 0.0.0-use.local
-  resolution: "@stoplight/spectral-parsers@workspace:packages/parsers"
-  dependencies:
-    "@stoplight/json": ~3.21.0
-    "@stoplight/types": ^14.1.1
-    "@stoplight/yaml": ~4.3.0
-    tslib: ^2.8.1
-  languageName: unknown
-  linkType: soft
-
-"@stoplight/spectral-ref-resolver@^1.0.4, @stoplight/spectral-ref-resolver@workspace:packages/ref-resolver":
-  version: 0.0.0-use.local
-  resolution: "@stoplight/spectral-ref-resolver@workspace:packages/ref-resolver"
-  dependencies:
-    "@stoplight/json-ref-readers": 1.2.2
-    "@stoplight/json-ref-resolver": ~3.1.6
-    "@stoplight/spectral-runtime": ^1.1.2
-    dependency-graph: 0.11.0
-    tslib: ^2.8.1
-  languageName: unknown
-  linkType: soft
-
-"@stoplight/spectral-ruleset-bundler@^1.6.0, @stoplight/spectral-ruleset-bundler@workspace:packages/ruleset-bundler":
-  version: 0.0.0-use.local
-  resolution: "@stoplight/spectral-ruleset-bundler@workspace:packages/ruleset-bundler"
-  dependencies:
-    "@rollup/plugin-commonjs": ~22.0.2
-    "@stoplight/path": 1.3.2
-    "@stoplight/spectral-core": ">=1"
-    "@stoplight/spectral-formats": ^1.8.1
-    "@stoplight/spectral-functions": ">=1"
-    "@stoplight/spectral-parsers": ">=1"
-    "@stoplight/spectral-ref-resolver": ^1.0.4
-    "@stoplight/spectral-ruleset-migrator": ^1.9.6
-    "@stoplight/spectral-rulesets": ">=1"
-    "@stoplight/spectral-runtime": ^1.1.2
-    "@stoplight/types": ^13.6.0
-    "@types/node": "*"
-    "@types/validate-npm-package-name": ^3.0.3
-    fetch-mock: ^12.6.0
-    memfs: ^3.5.3
-    pony-cause: 1.1.1
-    prettier: ^2.4.1
-    rollup: ~2.80.0
-    tslib: ^2.8.1
-    validate-npm-package-name: 3.0.0
-  languageName: unknown
-  linkType: soft
-
-"@stoplight/spectral-ruleset-migrator@^1.11.0, @stoplight/spectral-ruleset-migrator@^1.9.6, @stoplight/spectral-ruleset-migrator@workspace:packages/ruleset-migrator":
-  version: 0.0.0-use.local
-  resolution: "@stoplight/spectral-ruleset-migrator@workspace:packages/ruleset-migrator"
-  dependencies:
-    "@stoplight/json": ~3.21.0
-    "@stoplight/ordered-object-literal": ~1.0.4
-    "@stoplight/path": 1.3.2
-    "@stoplight/spectral-core": "*"
-    "@stoplight/spectral-functions": ^1.9.1
-    "@stoplight/spectral-rulesets": "*"
-    "@stoplight/spectral-runtime": ^1.1.2
-    "@stoplight/types": ^13.6.0
-    "@stoplight/yaml": ~4.2.3
-    "@types/node": "*"
-    ajv: ^8.18.0
-    ast-types: 0.14.2
-    astring: ^1.9.0
-    fetch-mock: ^12.6.0
-    json-schema-to-typescript: ^10.1.5
-    memfs: ^3.5.3
-    prettier: ^2.4.1
-    reserved: 0.1.2
-    tslib: ^2.8.1
-    validate-npm-package-name: 3.0.0
-  languageName: unknown
-  linkType: soft
-
-"@stoplight/spectral-rulesets@*, @stoplight/spectral-rulesets@>=1, @stoplight/spectral-rulesets@workspace:packages/rulesets":
-  version: 0.0.0-use.local
-  resolution: "@stoplight/spectral-rulesets@workspace:packages/rulesets"
-  dependencies:
-    "@asyncapi/specs": ^6.8.0
-    "@stoplight/better-ajv-errors": 1.0.3
-    "@stoplight/json": ^3.17.0
-    "@stoplight/path": ^1.3.2
-    "@stoplight/spectral-core": ^1.19.4
-    "@stoplight/spectral-formats": ^1.8.1
-    "@stoplight/spectral-functions": ^1.9.3
-    "@stoplight/spectral-parsers": "*"
-    "@stoplight/spectral-ref-resolver": ^1.0.4
-    "@stoplight/spectral-runtime": ^1.1.2
-    "@stoplight/types": ^13.6.0
-    "@types/json-schema": ^7.0.7
-    ajv: ^8.18.0
-    ajv-formats: ~2.1.1
-    gzip-size: ^6.0.0
-    immer: ^9.0.6
-    json-schema-traverse: ^1.0.0
-    leven: 3.1.0
-    lodash: ^4.18.1
-    terser: ^5.26.0
-    tslib: ^2.8.1
-  languageName: unknown
-  linkType: soft
-
-"@stoplight/spectral-runtime@^1.1.2, @stoplight/spectral-runtime@workspace:packages/runtime":
-  version: 0.0.0-use.local
-  resolution: "@stoplight/spectral-runtime@workspace:packages/runtime"
-  dependencies:
-    "@stoplight/json": ^3.20.1
-    "@stoplight/path": ^1.3.2
-    "@stoplight/types": ^13.6.0
-    abort-controller: ^3.0.0
-    lodash: ^4.18.1
-    node-fetch: ^2.7.0
-    tslib: ^2.8.1
-  languageName: unknown
-  linkType: soft
 
 "@stoplight/types@npm:^12.3.0 || ^13.0.0, @stoplight/types@npm:^13.0.0, @stoplight/types@npm:^13.15.0, @stoplight/types@npm:^13.6.0, @stoplight/types@npm:~13.6.0":
   version: 13.6.0

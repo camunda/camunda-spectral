@@ -1,5 +1,5 @@
-import { jsonSchemaDraft2019_09, jsonSchemaDraft2020_12 } from '@stoplight/spectral-formats';
-import { truthy } from '@stoplight/spectral-functions';
+import { jsonSchemaDraft2019_09, jsonSchemaDraft2020_12 } from '@camunda/spectral-formats';
+import { truthy } from '@camunda/spectral-functions';
 export default {
   formats: [jsonSchemaDraft2019_09, jsonSchemaDraft2020_12],
   rules: {

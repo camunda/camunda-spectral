@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
-import { Document, IRuleResult, Ruleset, Spectral } from '@stoplight/spectral-core';
-import { readParsable, IFileReadOptions } from '@stoplight/spectral-runtime';
-import * as Parsers from '@stoplight/spectral-parsers';
+import { Document, IRuleResult, Ruleset, Spectral } from '@camunda/spectral-core';
+import { readParsable, IFileReadOptions } from '@camunda/spectral-runtime';
+import * as Parsers from '@camunda/spectral-parsers';
 import { getRuleset, listFiles, segregateEntriesPerKind, readFileDescriptor } from './utils';
 import { getResolver } from './utils/getResolver';
 import { ILintConfig } from '../config';

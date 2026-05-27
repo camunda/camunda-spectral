@@ -1,4 +1,4 @@
-import { asyncapi, oas } from '@stoplight/spectral-rulesets';
+import { asyncapi, oas } from '@camunda/spectral-rulesets';
 export default {
   extends: [oas, asyncapi],
 };

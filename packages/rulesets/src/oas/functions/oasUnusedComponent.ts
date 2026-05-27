@@ -1,5 +1,5 @@
-import { unreferencedReusableObject } from '@stoplight/spectral-functions';
-import { createRulesetFunction, IFunctionResult } from '@stoplight/spectral-core';
+import { unreferencedReusableObject } from '@camunda/spectral-functions';
+import { createRulesetFunction, IFunctionResult } from '@camunda/spectral-core';
 import { isObject } from './utils/isObject';
 
 export default createRulesetFunction<{ components: Record<string, unknown> }, null>(

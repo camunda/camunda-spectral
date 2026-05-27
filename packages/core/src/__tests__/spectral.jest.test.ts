@@ -1,11 +1,11 @@
 import { normalize } from '@stoplight/path';
-import { truthy, pattern } from '@stoplight/spectral-functions';
+import { truthy, pattern } from '@camunda/spectral-functions';
 import { DiagnosticSeverity } from '@stoplight/types';
 import * as fs from 'fs';
 import nock from 'nock';
 import * as path from '@stoplight/path';
-import * as Parsers from '@stoplight/spectral-parsers';
-import { httpAndFileResolver } from '@stoplight/spectral-ref-resolver';
+import * as Parsers from '@camunda/spectral-parsers';
+import { httpAndFileResolver } from '@camunda/spectral-ref-resolver';
 
 import { Document } from '../document';
 import { Spectral } from '../spectral';

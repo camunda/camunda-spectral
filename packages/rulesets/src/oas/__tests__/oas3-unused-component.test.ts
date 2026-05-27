@@ -1,7 +1,7 @@
 import { DiagnosticSeverity } from '@stoplight/types';
 import * as path from '@stoplight/path';
-import * as Parsers from '@stoplight/spectral-parsers';
-import { Document } from '@stoplight/spectral-core';
+import * as Parsers from '@camunda/spectral-parsers';
+import { Document } from '@camunda/spectral-core';
 
 import testRule from '../../__tests__/__helpers__/tester';
 

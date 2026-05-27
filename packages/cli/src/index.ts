@@ -2,7 +2,7 @@
 
 import * as yargs from 'yargs';
 
-import { DEFAULT_REQUEST_OPTIONS } from '@stoplight/spectral-runtime';
+import { DEFAULT_REQUEST_OPTIONS } from '@camunda/spectral-runtime';
 import lintCommand from './commands/lint';
 
 if (typeof process.env.PROXY === 'string') {

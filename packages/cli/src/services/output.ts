@@ -1,5 +1,5 @@
 import * as process from 'process';
-import { IRuleResult, Ruleset } from '@stoplight/spectral-core';
+import { IRuleResult, Ruleset } from '@camunda/spectral-core';
 import { promises as fs } from 'fs';
 import {
   html,
@@ -13,8 +13,8 @@ import {
   sarif,
   codeClimate,
   markdown,
-} from '@stoplight/spectral-formatters';
-import type { Formatter, FormatterOptions } from '@stoplight/spectral-formatters';
+} from '@camunda/spectral-formatters';
+import type { Formatter, FormatterOptions } from '@camunda/spectral-formatters';
 import type { OutputFormat } from './config';
 import { VERSION } from '../version';
 

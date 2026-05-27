@@ -1,7 +1,7 @@
 import { stringify } from '@stoplight/json';
 import { DiagnosticSeverity } from '@stoplight/types';
-import * as Parsers from '@stoplight/spectral-parsers';
-import { createHttpAndFileResolver, Resolver } from '@stoplight/spectral-ref-resolver';
+import * as Parsers from '@camunda/spectral-parsers';
+import { createHttpAndFileResolver, Resolver } from '@camunda/spectral-ref-resolver';
 
 import { Document, IDocument, IParsedResult, isParsedResult, ParsedDocument } from './document';
 import { DocumentInventory } from './documentInventory';

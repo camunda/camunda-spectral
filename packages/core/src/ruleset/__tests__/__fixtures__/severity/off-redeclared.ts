@@ -1,6 +1,6 @@
-import { RulesetDefinition } from '@stoplight/spectral-core';
+import { RulesetDefinition } from '@camunda/spectral-core';
 import shared from './shared';
-import { truthy } from '@stoplight/spectral-functions/src';
+import { truthy } from '@camunda/spectral-functions/src';
 
 export default {
   extends: [[shared, 'off']],

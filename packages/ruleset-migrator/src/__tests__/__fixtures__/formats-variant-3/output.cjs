@@ -1,5 +1,5 @@
-const { jsonSchemaDraft2019_09, jsonSchemaDraft2020_12 } = require('@stoplight/spectral-formats');
-const { truthy } = require('@stoplight/spectral-functions');
+const { jsonSchemaDraft2019_09, jsonSchemaDraft2020_12 } = require('@camunda/spectral-formats');
+const { truthy } = require('@camunda/spectral-functions');
 module.exports = {
   formats: [jsonSchemaDraft2019_09, jsonSchemaDraft2020_12],
   rules: {

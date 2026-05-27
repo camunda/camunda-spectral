@@ -6,7 +6,7 @@ import {
   IRuleResult,
   RulesetFunction,
   RulesetFunctionWithValidator,
-} from '@stoplight/spectral-core';
+} from '@camunda/spectral-core';
 
 export default async function <O = unknown>(
   // eslint-disable-next-line @typescript-eslint/no-explicit-any

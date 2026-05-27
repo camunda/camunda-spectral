@@ -1,7 +1,7 @@
-import { serveAssets } from '@stoplight/spectral-test-utils';
+import { serveAssets } from '@camunda/spectral-test-utils';
 import * as path from 'path';
 import * as fs from 'fs';
-import { fetch } from '@stoplight/spectral-runtime';
+import { fetch } from '@camunda/spectral-runtime';
 import { bundleAndLoadRuleset } from '../node';
 import { IO } from '../../types';
 import { DiagnosticSeverity } from '@stoplight/types';

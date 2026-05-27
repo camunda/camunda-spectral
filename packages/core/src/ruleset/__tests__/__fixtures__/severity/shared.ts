@@ -1,5 +1,5 @@
-import { truthy, pattern } from '@stoplight/spectral-functions';
-import type { RulesetDefinition } from '@stoplight/spectral-core';
+import { truthy, pattern } from '@camunda/spectral-functions';
+import type { RulesetDefinition } from '@camunda/spectral-core';
 
 export { ruleset as default };
 

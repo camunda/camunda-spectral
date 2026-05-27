@@ -1,5 +1,5 @@
-import { arazzo1_0 } from '@stoplight/spectral-formats';
-import { truthy, falsy, pattern } from '@stoplight/spectral-functions';
+import { arazzo1_0 } from '@camunda/spectral-formats';
+import { truthy, falsy, pattern } from '@camunda/spectral-functions';
 
 import arazzoDocumentSchema from './functions/arazzoDocumentSchema';
 import arazzoWorkflowIdUniqueness from './functions/arazzoWorkflowIdUniqueness';

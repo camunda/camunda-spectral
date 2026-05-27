@@ -1,4 +1,4 @@
-import { falsy } from '@stoplight/spectral-functions';
+import { falsy } from '@camunda/spectral-functions';
 
 const ruleset = {
   get extends() {

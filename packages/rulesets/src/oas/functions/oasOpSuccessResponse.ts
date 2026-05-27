@@ -1,5 +1,5 @@
-import { createRulesetFunction } from '@stoplight/spectral-core';
-import { oas3 } from '@stoplight/spectral-formats';
+import { createRulesetFunction } from '@camunda/spectral-core';
+import { oas3 } from '@camunda/spectral-formats';
 
 export default createRulesetFunction<Record<string, unknown>, null>(
   {
