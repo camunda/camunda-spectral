@@ -51,6 +51,13 @@ try {
   }
   console.log(`Removed ${dtsFiles.length} .d.ts file(s) from bundle.`);
 
+  // Create a thin bin wrapper so npm's shim generator doesn't choke on
+  // the webpack boilerplate immediately after the shebang in index.js.
+  fs.writeFileSync(
+    path.join(BUNDLE_DIR, "bin.js"),
+    '#!/usr/bin/env node\nrequire("./index.js");\n'
+  );
+
   // Read version from the CLI package
   const cliPkg = JSON.parse(
     fs.readFileSync(
@@ -66,7 +73,7 @@ try {
     description:
       "Camunda fork of Stoplight Spectral CLI — fixes nimma null-deref, Unicode regex false positives, and adds ruleset-level ignoreUnknownFormat.",
     bin: {
-      spectral: "./index.js",
+      spectral: "./bin.js",
     },
     license: "Apache-2.0",
     repository: {
