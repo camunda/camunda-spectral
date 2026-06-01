@@ -1,0 +1,94 @@
+name: Check Upstream Spectral Release
+
+on:
+  schedule:
+    # Run daily at 08:00 UTC (weekdays)
+    - cron: "0 8 * * 1-5"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check-upstream:
+    name: Check for new @stoplight/spectral-cli release
+    runs-on: ubuntu-latest
+    if: github.repository == 'camunda/camunda-spectral'
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Get current fork base version
+        id: current
+        run: |
+          # Extract the version our fork is based on from package.json
+          FORK_VERSION=$(jq -r '.version' package.json)
+          echo "fork_version=$FORK_VERSION" >> "$GITHUB_OUTPUT"
+          echo "Fork is based on version: $FORK_VERSION"
+
+      - name: Get latest upstream version
+        id: upstream
+        run: |
+          UPSTREAM_VERSION=$(npm view @stoplight/spectral-cli version)
+          echo "upstream_version=$UPSTREAM_VERSION" >> "$GITHUB_OUTPUT"
+          echo "Latest upstream version: $UPSTREAM_VERSION"
+
+      - name: Compare versions
+        id: compare
+        run: |
+          FORK="${{ steps.current.outputs.fork_version }}"
+          UPSTREAM="${{ steps.upstream.outputs.upstream_version }}"
+
+          # Strip any pre-release suffix from fork version for comparison
+          FORK_BASE=$(echo "$FORK" | sed 's/-.*//')
+
+          if [ "$FORK_BASE" != "$UPSTREAM" ]; then
+            echo "new_release=true" >> "$GITHUB_OUTPUT"
+            echo "::notice::New upstream release detected: $UPSTREAM (fork is based on $FORK_BASE)"
+          else
+            echo "new_release=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::Fork is up to date with upstream ($UPSTREAM)"
+          fi
+
+      - name: Check for existing issue
+        if: steps.compare.outputs.new_release == 'true'
+        id: existing
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          UPSTREAM="${{ steps.upstream.outputs.upstream_version }}"
+          EXISTING=$(gh issue list --search "Upstream Spectral $UPSTREAM" --state open --json number --jq '.[0].number // empty')
+          if [ -n "$EXISTING" ]; then
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+            echo "::notice::Issue #$EXISTING already exists for version $UPSTREAM"
+          else
+            echo "exists=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Create issue for new upstream release
+        if: steps.compare.outputs.new_release == 'true' && steps.existing.outputs.exists == 'false'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          UPSTREAM="${{ steps.upstream.outputs.upstream_version }}"
+          FORK="${{ steps.current.outputs.fork_version }}"
+
+          gh issue create \
+            --title "Upstream Spectral $UPSTREAM released — evaluate rebase" \
+            --body "A new version of \`@stoplight/spectral-cli\` has been published.
+
+          **Upstream version:** $UPSTREAM
+          **Fork base version:** $FORK
+
+          ### Action items
+
+          - [ ] Review [upstream changelog](https://github.com/stoplightio/spectral/releases)
+          - [ ] Check if our patched issues are fixed upstream
+            - nimma null-dereference crash
+            - Unicode regex false positives
+            - \`ignoreUnknownFormat\` support
+          - [ ] If all fixes are upstream, consider switching back to \`@stoplight/spectral-cli\`
+          - [ ] If not, rebase fork onto new upstream and publish updated \`@camunda8/spectral-cli\`
+
+          ---
+          *This issue was created automatically by the upstream release check workflow.*"
